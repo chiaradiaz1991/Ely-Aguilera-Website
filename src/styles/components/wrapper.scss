@@ -1,0 +1,25 @@
+
+.wrapper-container {
+  height: 90vh;
+  width: 100%;
+  // padding-top: 10px;
+  // font-family: $text-font;
+}
+
+
+@include respond(phone) {
+  .wrapperContainer {
+    // height: 100vh;
+    // margin: 10px;
+  }
+}
+@include respond(tabletmini) {
+
+}
+@include respond(tablet) {
+
+  // background-color: indianred;
+}
+@include respond(desktop) {
+
+}
