@@ -14,9 +14,8 @@ import Logo from "./assets/logo-ely.png";
 import HomePage from './pages/HomePage';
 import AboutMe from './pages/AboutMe';
 import Gallery from './pages/Gallery';
-import Schedule from './pages/Schedule';
 import Contact from './pages/Contact';
-import Where from './pages/Where';
+import Information from './pages/Information';
 import Wrapper from './Components/Wrapper';
 
 const App = () => {
@@ -45,11 +44,11 @@ const App = () => {
                 </li>
                 <li className="links">
                   <NavLink
-                    to="/schedule"
+                    to="/information"
                     className="nav-links"
                     activeClassName="active-link"
                   >
-                    Días/horarios
+                    El Taller
                   </NavLink>
                 </li>
                 <li className="links">
@@ -59,15 +58,6 @@ const App = () => {
                     activeClassName="active-link"
                   >
                     Galería
-                  </NavLink>
-                </li>
-                <li className="links">
-                  <NavLink
-                    to="/where"
-                    className="nav-links"
-                    activeClassName="active-link"
-                  >
-                    ¿Dónde?
                   </NavLink>
                 </li>
                 <li className="links">
@@ -88,14 +78,11 @@ const App = () => {
               <Route path="/about-me">
                 <AboutMe />
               </Route>
-              <Route path="/schedule">
-                <Schedule />
-              </Route>
               <Route path="/gallery">
                 <Gallery />
               </Route>
-              <Route path="/where">
-                <Where />
+              <Route path="/information">
+                <Information />
               </Route>
               <Route path="/contact">
                 <Contact />

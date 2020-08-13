@@ -1,0 +1,26 @@
+.container-about { 
+  background-color: pink;
+}
+
+
+
+@include respond(desktop) {
+  .container-about {
+    background-color: pink;
+    display: flex;
+    flex-direction: row;
+    .title-section{
+      font-size: 90px;
+      background-color:yellow;
+    }
+    .side-information {
+      .ely-photo {
+        margin: 10px;;
+      }
+      .description{
+        font-size: 18px;
+        line-height: 3em;
+      }
+    }
+  }
+}
