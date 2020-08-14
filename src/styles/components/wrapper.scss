@@ -9,22 +9,17 @@
 
 @include respond(phone) {
   .main-container-wrapper {
-    // height: 100vh;
-    // margin: 10px;
+
   }
 }
-@include respond(tabletmini) {
 
-}
 @include respond(tablet) {
-
-  // background-color: indianred;
+  .main-container-wrapper {
+    width: 100%;
+  }
 }
 @include respond(desktop) {
   .main-container-wrapper {
-  // height: 95vh;
-  // padding-top: 10px;
   width: 100%;
-  // background-color: $white;
   }
 }

@@ -1,33 +1,107 @@
 .main-container-about {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
+  height: 100%;
   justify-content: space-between;
   background-image: url('../../assets/aboutMe-background.png');
   background-repeat: no-repeat;
-  background-size: 15%;
-  background-position: right bottom;
+  background-size: 50%;
+  background-position: bottom right;
+  margin-bottom: 60px;
   .about-title-section {
-    font-size: 70px;
+    font-size: 28px;
     align-self: center;
-    margin-left: 40px;
+    text-align: center;
     color: $red;
   }
 
   .side-about {
-    width: 50%;
 
     .ely-photo {
       margin: auto;
       display: flex;
-      height: 250px;
+      height: 200px;
     }
     .description-about {
       font-size: 17px;
       line-height: 23px;
-      width: 500px;
+      width: 300px;
       margin: auto;
+      text-align: center;
       margin-top: 30px;
+    }
+  }
+}
+
+@include respond(tablet) {
+  .main-container-about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    background-image: url('../../assets/aboutMe-background.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: bottom right;
+    .about-title-section {
+      font-size: 38px;
+      align-self: center;
+      text-align: center;
+      color: $red;
+    }
+  
+    .side-about {
+      // margin-top: -100px;
+      .ely-photo {
+        margin: auto;
+        display: flex;
+        height: 200px;
+      }
+      .description-about {
+        font-size: 17px;
+        line-height: 23px;
+        width: 300px;
+        margin: auto;
+        text-align: center;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@include respond(desktop) {
+  .main-container-about {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    background-image: url('../../assets/aboutMe-background.png');
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: right bottom;
+    .about-title-section {
+      font-size: 70px;
+      align-self: center;
+      margin-left: 40px;
+      color: $red;
+    }
+
+    .side-about {
+      width: 50%;
+
+      .ely-photo {
+        margin: auto;
+        display: flex;
+        height: 250px;
+      }
+      .description-about {
+        font-size: 17px;
+        line-height: 23px;
+        width: 500px;
+        margin: auto;
+        margin-top: 30px;
+      }
     }
   }
 }

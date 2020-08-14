@@ -1,9 +1,34 @@
-// .main-container-home {
-//   background-image: url('../../assets/home-background.png');
-//   background-repeat: no-repeat;
-//   background-size: contain;
-//   background-position: right;
-// }
+.main-container-home {
+  min-height: 400px;
+  background-image: url('../../assets/home-background.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-size: 90%;
+  display: flex;
+  justify-content: center;
+  .home-logo {
+    height: 200px;
+    margin: auto;
+  }
+}
+
+@include respond(tablet) {
+  .main-container-home {
+    height: 80vh;
+    background-image: url('../../assets/home-background.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    display: flex;
+    // background-size: 100%;
+    justify-content: center;
+    .home-logo {
+      height: 400px;
+      margin: auto;
+    }
+  }
+}
 
 
 @include respond(desktop) {
@@ -15,7 +40,7 @@
     background-position: right;
     display: flex;
     justify-content: center;
-    img {
+    .home-logo {
       height: 500px;
       margin: auto;
     }

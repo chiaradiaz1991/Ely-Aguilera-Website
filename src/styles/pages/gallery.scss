@@ -4,20 +4,44 @@
   background-image: url('../../assets/gallery-background.png');
   background-repeat: no-repeat;
   background-position: right bottom;
+  background-size: 70%;
   .side-gallery {
     margin: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     .image-gallery {
-      height: 250px;
+      height: 200px;
       margin: 20px;
       border-radius: 30px;
-      transition: transform .4s ease-in-out;
       border: 5px solid $yellow;
     }
-    .image-gallery:hover {
-      transform: scale(1.1);
+  }
+}
+
+
+@include respond(desktop) {
+  .main-container-gallery {
+    width: 100%;
+    margin-bottom: 80px;
+    background-image: url('../../assets/gallery-background.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    .side-gallery {
+      margin: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .image-gallery {
+        height: 250px;
+        margin: 20px;
+        border-radius: 30px;
+        transition: transform .4s ease-in-out;
+        border: 5px solid $yellow;
+      }
+      .image-gallery:hover {
+        transform: scale(1.1);
+      }
     }
   }
 }

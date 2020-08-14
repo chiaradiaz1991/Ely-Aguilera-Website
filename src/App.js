@@ -17,6 +17,7 @@ import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import Information from './pages/Information';
 import Wrapper from './Components/Wrapper';
+import Scroll from './Components/Scroll';
 
 const App = () => {
   return (
@@ -92,9 +93,15 @@ const App = () => {
         </Router>
       </div>
       <div className="mobile-links">
-        <img src={Logo} alt="" />
+        <img src={Logo} alt="" className="logo" />
+        <HomePage />
+        <AboutMe />
+        <Information />
+        <Gallery />
+        <Contact />
+        <Scroll scrollStepInPx="50" delayInMs="16.66"/>
       </div>
-      <footer><p className="footerUs">Esta página fue desarrollada y diseñada por&nbsp;<a href="https://chiaradiaz.com" target="_blank" className="footerUsA">Chiara Diaz&nbsp;</a>con 💖.&nbsp;®️ All rights reserved</p></footer>
+      <footer><p className="footerUs">desarrollada y diseñada por&nbsp;<a href="https://chiaradiaz.com" target="_blank" className="footerUsA">Chiara Diaz&nbsp;</a>con 💖&nbsp;®️ All rights reserved</p></footer>
     </div>
   );
 };

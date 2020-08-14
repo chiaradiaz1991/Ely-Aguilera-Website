@@ -6,7 +6,7 @@ const Information = () => {
   return (
     <>
       <div role="main" className="main-container-info">
-        <h1 className="information-title-section">¿DÓNDE?</h1>
+        <h1 className="information-title-section">EL TALLER.</h1>
         <div className="map">
           <img src={map} alt="map" className="map-img" />
           <p className="address">Dirección</p>

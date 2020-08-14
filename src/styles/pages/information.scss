@@ -1,52 +1,59 @@
 .main-container-info {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   justify-content: space-between;
   background-image: url('../../assets/information-background.png');
   background-repeat: no-repeat;
-  background-size: 25%;
+  background-size: 30%;
   background-position: right bottom;
   .information-title-section {
-    font-size: 70px;
+    font-size: 28px;
     align-self: center;
-    margin-left: 40px;
+    text-align: center;
     color: $yellow;
   }
   .map {
-    width: 50%;
+    width: 350px;
+    margin: auto;
     .map-img {
-      width: 550px;
+      width: 300px;
       margin: auto;
       display: flex;
     }
     .address {
+      width: 300px;
       font-weight: 600;
       font-size: 18px;
       color: $blue-green;
     }
     .address-description {
+      width: 300px;
       font-size: 16px;
     }
     .groups {
+      width: 300px;
       font-size: 20px;
       color: $violet;
       font-weight: 600;
     }
     .transport {
+      width: 300px;
       margin-top: 30px;
       font-size: 18px;
       font-weight: 600;
       color: $blue-green;
     }
     .bus {
+      width: 300px;
       display: flex;
+      flex-direction: column;
       .bus-description {
         display: flex;
         flex-direction: row;
         .bus-description-text {
-          margin-right: 10px;
           color: $green;
+          margin-right: 10px;
           strong {
             color: black;
           }
@@ -55,6 +62,142 @@
           height: 15px;
           align-self: center;
           margin-right: 30px;
+        }
+      }
+    }
+  }
+}
+
+@include respond(tablet) {
+  .main-container-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    background-image: url('../../assets/information-background.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right bottom;
+    .information-title-section {
+      font-size: 38px;
+      align-self: center;
+      text-align: center;
+      color: $yellow;
+    }
+    .map {
+      margin: auto;
+      .map-img {
+        width: 400px;
+        margin: auto;
+        display: flex;
+      }
+      .address {
+        width: 300px;
+        font-weight: 600;
+        font-size: 18px;
+        color: $blue-green;
+      }
+      .address-description {
+        width: 300px;
+        font-size: 16px;
+      }
+      .groups {
+        width: 300px;
+        font-size: 20px;
+        color: $violet;
+        font-weight: 600;
+      }
+      .transport {
+        width: 300px;
+        margin-top: 30px;
+        font-size: 18px;
+        font-weight: 600;
+        color: $blue-green;
+      }
+      .bus {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        .bus-description {
+          display: flex;
+          flex-direction: row;
+          .bus-description-text {
+            color: $green;
+            margin-right: 10px;
+            strong {
+              color: black;
+            }
+          }
+          .image-bus-color {
+            height: 15px;
+            align-self: center;
+            margin-right: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond(desktop) {
+  .main-container-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    background-image: url('../../assets/information-background.png');
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: right bottom;
+    .information-title-section {
+      font-size: 70px;
+      align-self: center;
+      margin-left: 40px;
+      color: $yellow;
+    }
+    .map {
+      width: 50%;
+      .map-img {
+        width: 550px;
+        margin: auto;
+        display: flex;
+      }
+      .address {
+        font-weight: 600;
+        font-size: 18px;
+        color: $blue-green;
+      }
+      .address-description {
+        font-size: 16px;
+      }
+      .groups {
+        font-size: 20px;
+        color: $violet;
+        font-weight: 600;
+      }
+      .transport {
+        margin-top: 30px;
+        font-size: 18px;
+        font-weight: 600;
+        color: $blue-green;
+      }
+      .bus {
+        display: flex;
+        .bus-description {
+          display: flex;
+          flex-direction: row;
+          .bus-description-text {
+            margin-right: 10px;
+            color: $green;
+            strong {
+              color: black;
+            }
+          }
+          .image-bus-color {
+            height: 15px;
+            align-self: center;
+            margin-right: 30px;
+          }
         }
       }
     }

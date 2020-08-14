@@ -8,7 +8,7 @@
     @media (min-width: 376px) and (max-width: 768px) { @content }
   }
   @if $breakpoint == tablet {
-    @media (min-width: 769px) and (max-width: 1024px) { @content }
+    @media (min-width: 600px) and (max-width: 999px) { @content }
   }
   @if $breakpoint == desktop {
     @media (min-width: 1000px) { @content }
