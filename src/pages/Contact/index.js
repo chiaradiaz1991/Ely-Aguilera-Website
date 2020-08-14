@@ -10,7 +10,7 @@ const Contact = () => {
         <div className="side-contact">
           <div className="social-media">
             <img src={email} alt="" className="logo" />
-            <a href="mailto:ely.zabeta70@gmail.com" target="_blank">ely.zabeta70@gmail.com</a>
+            <a href="mailto:eli.zabeta70@gmail.com" target="_blank">eli.zabeta70@gmail.com</a>
           </div>
           <div className="social-media">
             <img src={instagram} alt="" className="logo" />
