@@ -23,28 +23,28 @@ const Information = () => {
               <div className="bus">
                 <div className="bus-description">
                   <p className="bus-description-text">
-                    <strong>314</strong>
+                    Colectivo <strong>314</strong>
                   </p>
                   <img src={busColor} alt="" className="image-bus-color" />
                 </div>
                 <div className="bus-description">
                   <p className="bus-description-text">
-                    <strong>707</strong>
+                  Colectivo <strong>707</strong>
                   </p>
                 </div>
                 <div className="bus-description">
                   <p className="bus-description-text">
-                    <strong>138</strong> (Costera)
+                  Colectivo <strong>138</strong> (Costera)
                   </p>
                 </div>
                 <div className="bus-description">
                   <p className="bus-description-text">
-                    <strong>437</strong>
+                  Colectivo <strong>437</strong>
                   </p>
                 </div>
                 <div className="bus-description">
                   <p className="bus-description-text">
-                    <strong>130</strong> (Estación Boulogne Sur Mer)
+                  Colectivo <strong>130</strong> (Estación Boulogne Sur Mer)
                   </p>
                 </div>
               </div>
