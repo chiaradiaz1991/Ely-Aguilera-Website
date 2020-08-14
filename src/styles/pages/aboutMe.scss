@@ -1,26 +1,29 @@
-.container-about { 
-  background-color: pink;
-}
+.main-container-about {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  .about-title-section {
+    font-size: 70px;
+    align-self: center;
+    margin-left: 40px;
+    color: $red;
+  }
 
+  .side-about {
+    width: 50%;
 
-
-@include respond(desktop) {
-  .container-about {
-    background-color: pink;
-    display: flex;
-    flex-direction: row;
-    .title-section{
-      font-size: 90px;
-      background-color:yellow;
+    .ely-photo {
+      margin: auto;
+      display: flex;
+      height: 250px;
     }
-    .side-information {
-      .ely-photo {
-        margin: 10px;;
-      }
-      .description{
-        font-size: 18px;
-        line-height: 3em;
-      }
+    .description-about {
+      font-size: 17px;
+      line-height: 23px;
+      width: 500px;
+      margin: auto;
+      margin-top: 30px;
     }
   }
 }

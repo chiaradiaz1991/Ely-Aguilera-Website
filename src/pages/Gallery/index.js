@@ -20,7 +20,7 @@ import image17 from '../../assets/gallery/17.png';
 const Gallery = () => {
   return (
     <>
-      <div role="main" className="container-gallery">
+      <div role="main" className="main-container-gallery">
         <h1 className="title-section">GALERÍA</h1>
         <div className="side-gallery">
           <img className="image-gallery" src={image1} alt="" />

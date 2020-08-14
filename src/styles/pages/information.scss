@@ -1,0 +1,53 @@
+.main-container-info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  .information-title-section {
+    font-size: 70px;
+    align-self: center;
+    margin-left: 40px;
+    color: $yellow;
+  }
+  .map {
+    width: 50%;
+    .map-img {
+      width: 600px;
+      margin: auto;
+      display: flex;
+    }
+    .address {
+      font-weight: 600;
+      font-size: 18px;
+      color: $blue-green;
+    }
+    .address-description {
+      font-size: 16px;
+    }
+    .transport {
+      margin-top: 30px;
+      font-size: 18px;
+      font-weight: 600;
+      color: $blue-green;
+    }
+    .bus {
+      display: flex;
+      .bus-description {
+        display: flex;
+        flex-direction: row;
+        .bus-description-text {
+          margin-right: 10px;
+          color: $green;
+          strong {
+            color: black;
+          }
+        }
+        .image-bus-color {
+          height: 15px;
+          align-self: center;
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+}

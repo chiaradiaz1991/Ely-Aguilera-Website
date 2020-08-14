@@ -8,6 +8,7 @@
 
 @include respond(desktop) {
   .main-container-home {
+    height: 80vh;
     background-image: url('../../assets/home-background.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -15,10 +16,8 @@
     display: flex;
     justify-content: center;
     img {
-      // width: 900px;
-      // margin: auto;
-      // display: flex;
-      // justify-content: center;
+      height: 500px;
+      margin: auto;
     }
   }
 }

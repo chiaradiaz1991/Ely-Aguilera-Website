@@ -1,5 +1,5 @@
 
-.wrapper-container {
+.main-container-wrapper{
   // height: 90vh;
   // width: 100%;
   padding-top: 10px;
@@ -8,7 +8,7 @@
 
 
 @include respond(phone) {
-  .wrapperContainer {
+  .main-container-wrapper {
     // height: 100vh;
     // margin: 10px;
   }
@@ -21,7 +21,7 @@
   // background-color: indianred;
 }
 @include respond(desktop) {
-  .wrapper-container {
+  .main-container-wrapper {
   // height: 95vh;
   // padding-top: 10px;
   width: 100%;
