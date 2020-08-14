@@ -5,13 +5,13 @@
   justify-content: space-between;
   background-image: url('../../assets/information-background.png');
   background-repeat: no-repeat;
-  background-size: 30%;
+  background-size: 15%;
   background-position: right bottom;
   .information-title-section {
     font-size: 28px;
     align-self: center;
     text-align: center;
-    color: $yellow;
+    color: $dark-yellow;
   }
   .map {
     width: 350px;
@@ -21,47 +21,54 @@
       margin: auto;
       display: flex;
     }
-    .address {
-      width: 300px;
-      font-weight: 600;
-      font-size: 18px;
-      color: $blue-green;
-    }
-    .address-description {
-      width: 300px;
-      font-size: 16px;
-    }
-    .groups {
-      width: 300px;
-      font-size: 20px;
-      color: $violet;
-      font-weight: 600;
-    }
-    .transport {
-      width: 300px;
-      margin-top: 30px;
-      font-size: 18px;
-      font-weight: 600;
-      color: $blue-green;
-    }
-    .bus {
-      width: 300px;
-      display: flex;
-      flex-direction: column;
-      .bus-description {
-        display: flex;
-        flex-direction: row;
-        .bus-description-text {
-          color: $green;
-          margin-right: 10px;
-          strong {
-            color: black;
-          }
+    .left-right-container {
+      padding-left: 30px;
+      .left {
+        .address {
+          width: 300px;
+          font-weight: 600;
+          font-size: 18px;
+          color: $blue-green;
         }
-        .image-bus-color {
-          height: 15px;
-          align-self: center;
-          margin-right: 30px;
+        .address-description {
+          width: 300px;
+          font-size: 16px;
+        }
+        .groups {
+          width: 300px;
+          font-size: 20px;
+          color: $violet;
+          font-weight: 600;
+        }
+      }
+      .right {
+        .transport {
+          width: 300px;
+          margin-top: 30px;
+          font-size: 18px;
+          font-weight: 600;
+          color: $blue-green;
+        }
+        .bus {
+          width: 300px;
+          display: flex;
+          flex-direction: column;
+          .bus-description {
+            display: flex;
+            flex-direction: row;
+            .bus-description-text {
+              color: $green;
+              margin-right: 10px;
+              strong {
+                color: black;
+              }
+            }
+            .image-bus-color {
+              height: 15px;
+              align-self: center;
+              margin-right: 30px;
+            }
+          }
         }
       }
     }
@@ -76,13 +83,13 @@
     justify-content: space-between;
     background-image: url('../../assets/information-background.png');
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 30%;
     background-position: right bottom;
     .information-title-section {
       font-size: 38px;
       align-self: center;
       text-align: center;
-      color: $yellow;
+      color: $dark-yellow;
     }
     .map {
       margin: auto;
@@ -91,47 +98,53 @@
         margin: auto;
         display: flex;
       }
-      .address {
-        width: 300px;
-        font-weight: 600;
-        font-size: 18px;
-        color: $blue-green;
-      }
-      .address-description {
-        width: 300px;
-        font-size: 16px;
-      }
-      .groups {
-        width: 300px;
-        font-size: 20px;
-        color: $violet;
-        font-weight: 600;
-      }
-      .transport {
-        width: 300px;
-        margin-top: 30px;
-        font-size: 18px;
-        font-weight: 600;
-        color: $blue-green;
-      }
-      .bus {
-        width: 300px;
-        display: flex;
-        flex-direction: column;
-        .bus-description {
-          display: flex;
-          flex-direction: row;
-          .bus-description-text {
-            color: $green;
-            margin-right: 10px;
-            strong {
-              color: black;
-            }
+      .left-right-container {
+        .left {
+          .address {
+            width: 300px;
+            font-weight: 600;
+            font-size: 18px;
+            color: $blue-green;
           }
-          .image-bus-color {
-            height: 15px;
-            align-self: center;
-            margin-right: 30px;
+          .address-description {
+            width: 300px;
+            font-size: 16px;
+          }
+          .groups {
+            width: 300px;
+            font-size: 20px;
+            color: $violet;
+            font-weight: 600;
+          }
+        }
+        .right {
+          .transport {
+            width: 300px;
+            margin-top: 30px;
+            font-size: 18px;
+            font-weight: 600;
+            color: $blue-green;
+          }
+          .bus {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            .bus-description {
+              display: flex;
+              flex-direction: row;
+              .bus-description-text {
+                color: $green;
+                margin-right: 10px;
+                strong {
+                  color: black;
+                }
+              }
+              .image-bus-color {
+                height: 15px;
+                align-self: center;
+                margin-right: 30px;
+              }
+            }
           }
         }
       }
@@ -144,16 +157,14 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: 100%;
     justify-content: space-between;
-    background-image: url('../../assets/information-background.png');
-    background-repeat: no-repeat;
-    background-size: 25%;
-    background-position: right bottom;
+
     .information-title-section {
       font-size: 70px;
       align-self: center;
-      margin-left: 40px;
-      color: $yellow;
+      color: $dark-yellow;
+      width: 50%;
     }
     .map {
       width: 50%;
@@ -162,41 +173,52 @@
         margin: auto;
         display: flex;
       }
-      .address {
-        font-weight: 600;
-        font-size: 18px;
-        color: $blue-green;
-      }
-      .address-description {
-        font-size: 16px;
-      }
-      .groups {
-        font-size: 20px;
-        color: $violet;
-        font-weight: 600;
-      }
-      .transport {
-        margin-top: 30px;
-        font-size: 18px;
-        font-weight: 600;
-        color: $blue-green;
-      }
-      .bus {
+      .left-right-container {
         display: flex;
-        .bus-description {
-          display: flex;
-          flex-direction: row;
-          .bus-description-text {
-            margin-right: 10px;
-            color: $green;
-            strong {
-              color: black;
-            }
+        flex-direction: row;
+        justify-content: center;
+        .left {
+          margin-right: 30px;
+          .address {
+            font-weight: 600;
+            font-size: 18px;
+            color: $blue-green;
           }
-          .image-bus-color {
-            height: 15px;
-            align-self: center;
-            margin-right: 30px;
+          .address-description {
+            font-size: 16px;
+          }
+          .groups {
+            font-size: 20px;
+            color: $violet;
+            font-weight: 600;
+          }
+        }
+        .right {
+          padding-left: 30px;
+          .transport {
+            margin-top: 30px;
+            font-size: 18px;
+            font-weight: 600;
+            color: $blue-green;
+          }
+          .bus {
+            display: flex;
+            .bus-description {
+              display: flex;
+              flex-direction: row;
+              .bus-description-text {
+                margin-right: 10px;
+                color: $green;
+                strong {
+                  color: black;
+                }
+              }
+              .image-bus-color {
+                height: 15px;
+                align-self: center;
+                margin-right: 30px;
+              }
+            }
           }
         }
       }

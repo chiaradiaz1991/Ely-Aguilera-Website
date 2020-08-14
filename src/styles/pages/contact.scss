@@ -38,7 +38,7 @@
     flex-direction: column;
     width: 100%;
     justify-content: flex-start;
-    height: 80vh;
+    height: 75vh;
     background-image: url('../../assets/contact-background.png');
     background-repeat: no-repeat;
     background-size: 55%;
@@ -86,7 +86,6 @@
     .contact-title-section {
       font-size: 70px;
       align-self: center;
-      margin-left: 40px;
       color: $violet;
       width: 50%;
     }
