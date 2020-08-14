@@ -36,7 +36,7 @@ const App = () => {
               <div className="other-links" role="navigation">
                 <li className="links">
                   <NavLink
-                    to="/about-me"
+                    to="/sobre-mi"
                     className="nav-links"
                     activeClassName="active-link"
                   >
@@ -45,7 +45,7 @@ const App = () => {
                 </li>
                 <li className="links">
                   <NavLink
-                    to="/information"
+                    to="/el-taller"
                     className="nav-links"
                     activeClassName="active-link"
                   >
@@ -54,7 +54,7 @@ const App = () => {
                 </li>
                 <li className="links">
                   <NavLink
-                    to="/gallery"
+                    to="/galeria"
                     className="nav-links"
                     activeClassName="active-link"
                   >
@@ -63,7 +63,7 @@ const App = () => {
                 </li>
                 <li className="links">
                   <NavLink
-                    to="/contact"
+                    to="/contacto"
                     className="nav-links"
                     activeClassName="active-link"
                   >
@@ -76,16 +76,16 @@ const App = () => {
               <Route exact path="/">
                 <HomePage />
               </Route>
-              <Route path="/about-me">
+              <Route path="/sobre-mi">
                 <AboutMe />
               </Route>
-              <Route path="/gallery">
+              <Route path="/galeria">
                 <Gallery />
               </Route>
-              <Route path="/information">
+              <Route path="/el-taller">
                 <Information />
               </Route>
-              <Route path="/contact">
+              <Route path="/contacto">
                 <Contact />
               </Route>
             </Switch> 
