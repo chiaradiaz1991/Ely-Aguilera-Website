@@ -21,25 +21,24 @@ const Gallery = () => {
   return (
     <>
       <div role="main" className="main-container-gallery">
-        <h1 className="title-section">GALERÍA</h1>
         <div className="side-gallery">
           <img className="image-gallery" src={image1} alt="" />
           <img className="image-gallery" src={image2} alt="" />
           <img className="image-gallery" src={image3} alt="" />
           <img className="image-gallery" src={image4} alt="" />
+          <img className="image-gallery" src={image14} alt="" />
           <img className="image-gallery" src={image5} alt="" />
           <img className="image-gallery" src={image6} alt="" />
           <img className="image-gallery" src={image7} alt="" />
           <img className="image-gallery" src={image8} alt="" />
           <img className="image-gallery" src={image9} alt="" />
+          <img className="image-gallery" src={image16} alt="" />
+          <img className="image-gallery" src={image17} alt="" />
           <img className="image-gallery" src={image10} alt="" />
           <img className="image-gallery" src={image11} alt="" />
           <img className="image-gallery" src={image12} alt="" />
           <img className="image-gallery" src={image13} alt="" />
-          <img className="image-gallery" src={image14} alt="" />
           <img className="image-gallery" src={image15} alt="" />
-          <img className="image-gallery" src={image16} alt="" />
-          <img className="image-gallery" src={image17} alt="" />
         </div>
       </div>
     </>

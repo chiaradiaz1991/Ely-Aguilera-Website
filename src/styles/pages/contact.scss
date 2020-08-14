@@ -1,0 +1,39 @@
+.main-container-contact {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  background-image: url('../../assets/contact-background.png');
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position: right bottom;
+  .contact-title-section {
+    font-size: 70px;
+    align-self: center;
+    margin-left: 40px;
+    color: $violet;
+    width: 50%;
+  }
+  .side-contact {
+    width: 50%;
+    align-self: center;
+    .social-media {
+      display: flex;
+      flex-direction: row;
+      margin: 70px;
+      .logo {
+        width: 50px;
+        margin-right: 30px;
+        align-self: center;
+      }
+      a {
+        text-decoration: none;
+        font-size: 20px;
+        color: $blue-green;
+        align-self: center;
+        font-weight: 600;
+      }
+    }
+  }
+}

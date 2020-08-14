@@ -3,6 +3,10 @@
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
+  background-image: url('../../assets/information-background.png');
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: right bottom;
   .information-title-section {
     font-size: 70px;
     align-self: center;
@@ -12,7 +16,7 @@
   .map {
     width: 50%;
     .map-img {
-      width: 600px;
+      width: 550px;
       margin: auto;
       display: flex;
     }
@@ -23,6 +27,11 @@
     }
     .address-description {
       font-size: 16px;
+    }
+    .groups {
+      font-size: 20px;
+      color: $violet;
+      font-weight: 600;
     }
     .transport {
       margin-top: 30px;

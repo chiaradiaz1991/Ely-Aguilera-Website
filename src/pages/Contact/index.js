@@ -6,13 +6,15 @@ const Contact = () => {
   return (
     <>
       <div role="main" className="main-container-contact">
-        <h1 className="title-section">CONTACTO</h1>
+        <h1 className="contact-title-section">CONTACTO.</h1>
         <div className="side-contact">
-          <img src={email} alt="" />
-          <a href="mailto:ely.zabeta70@gmail.com">ely.zabeta70@gmail.com</a>
-          <div className="instagram">
-            <img src={instagram} alt="" />
-            <a href="https://www.instagram.com/taller.elyaguilera/">
+          <div className="social-media">
+            <img src={email} alt="" className="logo" />
+            <a href="mailto:ely.zabeta70@gmail.com" target="_blank">ely.zabeta70@gmail.com</a>
+          </div>
+          <div className="social-media">
+            <img src={instagram} alt="" className="logo" />
+            <a href="https://www.instagram.com/taller.elyaguilera/" target="_blank">
               taller.elyaguilera
             </a>
           </div>

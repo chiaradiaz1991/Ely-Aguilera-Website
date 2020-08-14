@@ -1,39 +1,23 @@
-.container-gallery {
-  background-color: pink;
-
-
-  .title-section{
-
-  }
+.main-container-gallery {
+  width: 100%;
+  margin-bottom: 80px;
+  background-image: url('../../assets/gallery-background.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
   .side-gallery {
-
-    .image-gallery {
-
-    }
-  }
-}
-
-
-@include respond(desktop) {
-  .container-gallery {
-    background-color: pink;
+    margin: 30px;
     display: flex;
-    flex-direction: row;
-
-    .title-section{
-      font-size: 90px;
-      background-color:yellow;
+    flex-wrap: wrap;
+    justify-content: center;
+    .image-gallery {
+      height: 250px;
+      margin: 20px;
+      border-radius: 30px;
+      transition: transform .4s ease-in-out;
+      border: 5px solid $yellow;
     }
-    .side-gallery {
-      box-sizing: border-box;
-      margin: 0 auto;
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: flex-start;
-      align-items: flex-start;
-      .image-gallery {
-        width: 300px;
-      }
+    .image-gallery:hover {
+      transform: scale(1.1);
     }
   }
 }

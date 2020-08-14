@@ -14,6 +14,7 @@ const Information = () => {
             Olazabal 169, entre Uriarte y Antonio Saenz, Boulogne Sur Mer (Zona
             Norte).
           </p>
+          <h3 className="groups">Grupos reducidos a convenir</h3>
           <h3 className="transport">Medios de transporte</h3>
           <div className="bus">
             <div className="bus-description">

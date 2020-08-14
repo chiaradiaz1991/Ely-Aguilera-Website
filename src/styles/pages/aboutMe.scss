@@ -3,6 +3,10 @@
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
+  background-image: url('../../assets/aboutMe-background.png');
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position: right bottom;
   .about-title-section {
     font-size: 70px;
     align-self: center;
