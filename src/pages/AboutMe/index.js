@@ -16,7 +16,7 @@ const AboutMe = () => {
           <p className="description-about">
             Nací en Buenos Aires, Argentina. Estoy casada y tengo 3 hijas. Desde
             pequeña me sedujo todo lo relacionado al arte, pasando por
-            diferentes lenguajes artísticos y especializandone en la pintura. El
+            diferentes lenguajes artísticos y especializandome en la pintura. El
             pincel fue mi gran aliado explorando sobre distintas superficies y
             materiales.
             <br />
