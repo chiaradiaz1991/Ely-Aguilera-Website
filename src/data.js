@@ -36,7 +36,13 @@ export const data = [
     src: image2,
   },
   { 
+    src: image21,
+  },
+  { 
     src: image3,
+  },
+  { 
+    src: image26,
   },
   { 
     src: image4,
@@ -63,16 +69,25 @@ export const data = [
     src: image11,
   },
   { 
+    src: image18,
+  },
+  { 
     src: image12,
+  },
+  { 
+    src: image25,
+  },
+  { 
+    src: image24,
   },
   { 
     src: image13,
   },
   { 
-    src: image14,
+    src: image23,
   },
   { 
-    src: image15,
+    src: image14,
   },
   { 
     src: image16,
@@ -81,31 +96,13 @@ export const data = [
     src: image17,
   },
   { 
-    src: image18,
-  },
-  { 
     src: image19,
   },
   { 
+    src: image15,
+  },
+  { 
     src: image20,
-  },
-  { 
-    src: image21,
-  },
-  { 
-    src: image22,
-  },
-  { 
-    src: image23,
-  },
-  { 
-    src: image24,
-  },
-  { 
-    src: image25,
-  },
-  { 
-    src: image26,
   },
   { 
     src: image27,
@@ -113,5 +110,7 @@ export const data = [
   { 
     src: image28,
   },
-
+  { 
+    src: image22,
+  },
 ]
