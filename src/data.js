@@ -26,6 +26,12 @@ import image25 from './assets/gallery/25.png';
 import image26 from './assets/gallery/26.png';
 import image27 from './assets/gallery/27.png';
 import image28 from './assets/gallery/28.png';
+import image29 from './assets/gallery/29.png';
+import image30 from './assets/gallery/30.png';
+import image31 from './assets/gallery/31.png';
+import image32 from './assets/gallery/32.png';
+import image33 from './assets/gallery/33.png';
+import image34 from './assets/gallery/34.png';
 
 
 export const data = [
@@ -37,6 +43,9 @@ export const data = [
   },
   { 
     src: image21,
+  },
+  { 
+    src: image30,
   },
   { 
     src: image3,
@@ -54,6 +63,9 @@ export const data = [
     src: image6,
   },
   { 
+    src: image29,
+  },
+  { 
     src: image7,
   },
   { 
@@ -67,6 +79,9 @@ export const data = [
   },
   { 
     src: image11,
+  },
+  { 
+    src: image31,
   },
   { 
     src: image18,
@@ -87,6 +102,9 @@ export const data = [
     src: image23,
   },
   { 
+    src: image32,
+  },
+  { 
     src: image14,
   },
   { 
@@ -102,6 +120,9 @@ export const data = [
     src: image15,
   },
   { 
+    src: image33,
+  },
+  { 
     src: image20,
   },
   { 
@@ -112,5 +133,8 @@ export const data = [
   },
   { 
     src: image22,
+  },
+  { 
+    src: image34,
   },
 ]

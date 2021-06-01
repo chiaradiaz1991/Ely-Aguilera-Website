@@ -9,7 +9,7 @@ const AboutMe = () => {
         className="main-container-about"
       >
         <h1 className="about-title-section">
-          ACERCA DE MI.
+          SOBRE MI.
         </h1>
         <div className="side-about">
           <img src={photo} alt="" className="ely-photo" />

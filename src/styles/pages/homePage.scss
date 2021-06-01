@@ -22,9 +22,10 @@
     background-position: right;
     display: flex;
     // background-size: 100%;
+    
     justify-content: center;
     .home-logo {
-      height: 400px;
+      height: 300px;
       margin: auto;
     }
   }
@@ -41,7 +42,16 @@
     display: flex;
     justify-content: center;
     .home-logo {
-      height: 500px;
+      height: 300px;
+      margin: auto;
+    }
+  }
+}
+
+@include respond(desktopLarge) {
+  .main-container-home {
+    .home-logo {
+      height: 400px;
       margin: auto;
     }
   }

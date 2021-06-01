@@ -12,7 +12,7 @@
   .about-title-section {
     font-size: 28px;
     align-self: center;
-    text-align: center;
+    text-align: left;
     color: $red;
   }
 
@@ -27,7 +27,7 @@
       line-height: 23px;
       width: 300px;
       margin: auto;
-      text-align: center;
+      text-align: left;
       margin-top: 30px;
     }
   }
@@ -46,7 +46,7 @@
     .about-title-section {
       font-size: 38px;
       align-self: center;
-      text-align: center;
+      text-align: left;
       color: $red;
     }
   
@@ -62,7 +62,7 @@
         line-height: 23px;
         width: 300px;
         margin: auto;
-        text-align: center;
+        text-align: left;
         margin-top: 30px;
       }
     }
@@ -82,6 +82,7 @@
     background-position: right bottom;
     .about-title-section {
       font-size: 70px;
+      padding-left: 30px;
       align-self: center;
       color: $red;
       width: 50%;

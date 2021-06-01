@@ -1,6 +1,8 @@
 import React from "react";
-import map from "../../assets/map.png";
 import busColor from "../../assets/bus-color.png";
+import Map from "../../Components/Map";
+import email from '../../assets/email.png';
+import instagram from '../../assets/instagram.png';
 
 const Information = () => {
   return (
@@ -8,7 +10,7 @@ const Information = () => {
       <div role="main" className="main-container-info">
         <h1 className="information-title-section">EL TALLER.</h1>
         <div className="map">
-          <img src={map} alt="map" className="map-img" />
+          <Map />
           <div className="left-right-container">
             <div className="left">
               <p className="address">Dirección</p>
@@ -16,38 +18,51 @@ const Information = () => {
                 Olazabal 169, entre Uriarte y Antonio Saenz, Boulogne Sur Mer
                 (Zona Norte).
               </p>
-              <h3 className="groups">Grupos reducidos a convenir</h3>
+              <p className="class">
+                Grupos de máx. 4 personas
+                <br />
+                Protocolos de cuidado
+                <br />
+                Clases para niños y adultos
+              </p>
             </div>
             <div className="right">
               <h3 className="transport">Medios de transporte</h3>
               <div className="bus">
                 <div className="bus-description">
-                  <p className="bus-description-text">
-                    Colectivo <strong>314</strong>
-                  </p>
+                  Colectivo 314
                   <img src={busColor} alt="" className="image-bus-color" />
                 </div>
-                <div className="bus-description">
-                  <p className="bus-description-text">
-                  Colectivo <strong>707</strong>
-                  </p>
-                </div>
-                <div className="bus-description">
-                  <p className="bus-description-text">
-                  Colectivo <strong>138</strong> (Costera)
-                  </p>
-                </div>
-                <div className="bus-description">
-                  <p className="bus-description-text">
-                  Colectivo <strong>437</strong>
-                  </p>
-                </div>
-                <div className="bus-description">
-                  <p className="bus-description-text">
-                  Colectivo <strong>130</strong> (Estación Boulogne Sur Mer)
-                  </p>
-                </div>
+                Colectivo 707
+                <br />
+                Colectivo 138 (Costera)
+                <br />
+                Colectivo 437
+                <br />
+                Colectivo 130 (Estación Boulogne Sur Mer)
               </div>
+            </div>
+          </div>
+          <div className="contact">
+            <div className="social-media">
+              <img src={email} className="social-icon" />
+              <a
+                href="mailto:taller.elyaguilera@gmail.com"
+                target="_blank"
+                className="link"
+              >
+                taller.elyaguilera@gmail.com
+              </a>
+            </div>
+            <div className="social-media">
+              <img src={instagram} className="social-icon" />
+              <a
+                href="https://www.instagram.com/taller.elyaguilera/"
+                target="_blank"
+                className="link"
+              >
+                taller.elyaguilera
+              </a>
             </div>
           </div>
         </div>
