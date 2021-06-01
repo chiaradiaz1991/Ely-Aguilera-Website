@@ -17,6 +17,25 @@
       margin: auto;
       display: flex;
     }
+    .contact {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .social-icon {
+          width: 15px;
+          height: auto;
+          margin-right: 10px;
+        }
+        .link {
+          font-size: 18px;
+          color: black;
+        }
+      }
+    }
     .left-right-container {
       padding-left: 30px;
       .left {
@@ -28,7 +47,7 @@
         }
         .address-description {
           width: 300px;
-          font-size: 16px;
+          font-size: 18px;
         }
         .class {
           color: $red;
@@ -65,25 +84,6 @@
         }
       }
     }
-    .contact {
-      margin-top: 30px;
-      display: flex;
-      flex-direction: column;
-      .social-media {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .social-icon {
-          width: 15px;
-          height: auto;
-          margin-right: 10px;
-        }
-        .link {
-          font-size: 16px;
-          color: black;
-        }
-      }
-    }
   }
 }
 
@@ -116,7 +116,7 @@
           }
           .address-description {
             width: 300px;
-            font-size: 16px;
+            font-size: 18px;
           }
         }
         .right {
@@ -150,15 +150,6 @@
           }
         }
       }
-      .contact{
-        .social-media {
-          
-          .social-icon {
-          }
-          .link {
-          }
-        }
-      }
     }
   }
 }
@@ -170,7 +161,7 @@
     width: 100%;
     height: 100%;
     justify-content: space-between;
-
+    margin-bottom: 100px;
     .information-title-section {
       font-size: 70px;
       align-self: center;
@@ -186,6 +177,17 @@
         margin: auto;
         display: flex;
       }
+      .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .social-media  {
+          .social-icon {
+          }
+          .link {
+          }
+        }
+      }
       .left-right-container {
         display: flex;
         flex-direction: row;
@@ -198,10 +200,10 @@
             color: $blue-green;
           }
           .address-description {
-            font-size: 16px;
+            font-size: 18px;
           }
           .groups {
-            font-size: 20px;
+            font-size: 18px;
             color: $violet;
             font-weight: 600;
           }
@@ -231,17 +233,6 @@
                 margin-left: 10px;
               }
             }
-          }
-        }
-      }
-      .contact {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        .social-media {
-          .social-icon {
-          }
-          .link {
           }
         }
       }

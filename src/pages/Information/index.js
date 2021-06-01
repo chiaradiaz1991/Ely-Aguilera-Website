@@ -1,8 +1,8 @@
 import React from "react";
 import busColor from "../../assets/bus-color.png";
 import Map from "../../Components/Map";
-import email from '../../assets/email.png';
-import instagram from '../../assets/instagram.png';
+import email from "../../assets/email.png";
+import instagram from "../../assets/instagram.png";
 
 const Information = () => {
   return (
@@ -11,6 +11,28 @@ const Information = () => {
         <h1 className="information-title-section">EL TALLER.</h1>
         <div className="map">
           <Map />
+          <div className="contact">
+            <div className="social-media">
+              <img src={email} className="social-icon" />
+              <a
+                href="mailto:taller.elyaguilera@gmail.com"
+                target="_blank"
+                className="link"
+              >
+                taller.elyaguilera@gmail.com
+              </a>
+            </div>
+            <div className="social-media">
+              <img src={instagram} className="social-icon" />
+              <a
+                href="https://www.instagram.com/taller.elyaguilera/"
+                target="_blank"
+                className="link"
+              >
+                taller.elyaguilera
+              </a>
+            </div>
+          </div>
           <div className="left-right-container">
             <div className="left">
               <p className="address">Dirección</p>
@@ -41,28 +63,6 @@ const Information = () => {
                 <br />
                 Colectivo 130 (Estación Boulogne Sur Mer)
               </div>
-            </div>
-          </div>
-          <div className="contact">
-            <div className="social-media">
-              <img src={email} className="social-icon" />
-              <a
-                href="mailto:taller.elyaguilera@gmail.com"
-                target="_blank"
-                className="link"
-              >
-                taller.elyaguilera@gmail.com
-              </a>
-            </div>
-            <div className="social-media">
-              <img src={instagram} className="social-icon" />
-              <a
-                href="https://www.instagram.com/taller.elyaguilera/"
-                target="_blank"
-                className="link"
-              >
-                taller.elyaguilera
-              </a>
             </div>
           </div>
         </div>
