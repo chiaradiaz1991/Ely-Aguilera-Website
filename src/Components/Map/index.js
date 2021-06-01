@@ -1,6 +1,5 @@
 import * as React from "react";
 import ReactMapGL, { Marker } from "react-map-gl";
-import { REACT_APP_TOKEN } from "../../config";
 import icon from '../../assets/mapMarker.png';
 
 function Map() {
@@ -17,7 +16,7 @@ function Map() {
         width="100%"
         height={350}
         onViewportChange={(viewport) => setViewport(viewport)}
-        mapboxApiAccessToken={REACT_APP_TOKEN}
+        mapboxApiAccessToken="pk.eyJ1IjoiY2hpYXJhZGlheiIsImEiOiJja3BjcTFscGYwMmc5MzBvMTI1MGN6Zm5zIn0.oTzdBikEBzNCmxjWnfWp-Q"
         className="map"
       >
         <Marker
