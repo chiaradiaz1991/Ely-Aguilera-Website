@@ -87,19 +87,6 @@ const App = () => {
         <Gallery />
         <Scroll scrollStepInPx="50" delayInMs="16.66" />
       </div>
-      <footer>
-        <p className="footerUs">
-          desarrollada y diseñada por&nbsp;
-          <a
-            href="https://chiaradiaz.com"
-            target="_blank"
-            className="footerUsA"
-          >
-            Chiara Diaz&nbsp;
-          </a>
-          con 💖
-        </p>
-      </footer>
     </div>
   );
 };
