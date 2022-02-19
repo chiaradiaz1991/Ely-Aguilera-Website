@@ -5,7 +5,7 @@
     @media (max-width: 375px) and (max-width: 768px) { @content }
   }
   @if $breakpoint == tablet {
-    @media (min-width: 769px) and (max-width: 1023px) { @content }
+    @media (min-width: 768px) and (max-width: 1023px) { @content }
   }
   @if $breakpoint == desktop {
     @media (min-width: 1024px) { @content }

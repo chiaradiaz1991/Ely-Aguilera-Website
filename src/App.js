@@ -22,71 +22,20 @@ const App = () => {
   return (
     <div role="main" className="main-container">
       <div className="desktop-links">
-        <Router>
-          <Wrapper>
-            <ul>
-              <div className="logo-container">
-                <li className="links">
-                  <Link to="/" className="nav-links">
-                    <img className="logo" src={Logo} alt="" />
-                  </Link>
-                </li>
-              </div>
-              <div className="other-links" role="navigation">
-                <li className="links">
-                  <NavLink
-                    to="/sobre-mi"
-                    className="nav-links"
-                    activeClassName="active-link"
-                  >
-                    Sobre mi
-                  </NavLink>
-                </li>
-                <li className="links">
-                  <NavLink
-                    to="/el-taller"
-                    className="nav-links"
-                    activeClassName="active-link"
-                  >
-                    El Taller
-                  </NavLink>
-                </li>
-                <li className="links">
-                  <NavLink
-                    to="/galeria"
-                    className="nav-links"
-                    activeClassName="active-link"
-                  >
-                    Galería
-                  </NavLink>
-                </li>
-              </div>
-            </ul>
-            <Switch>
-              <Route exact path="/">
-                <HomePage />
-              </Route>
-              <Route path="/sobre-mi">
-                <AboutMe />
-              </Route>
-              <Route path="/galeria">
-                <Gallery />
-              </Route>
-              <Route path="/el-taller">
-                <Information />
-              </Route>
-            </Switch>
-          </Wrapper>
-        </Router>
+        <Wrapper>
+          <HomePage />
+          <AboutMe />
+          <Gallery />
+          <Information />
+        </Wrapper>
       </div>
-      <div className="mobile-links">
-        <img src={Logo} alt="" className="logo" />
+      {/* <div className="mobile-links">
         <HomePage />
         <AboutMe />
-        <Information />
         <Gallery />
+        <Information />
         <Scroll scrollStepInPx="50" delayInMs="16.66" />
-      </div>
+      </div> */}
     </div>
   );
 };

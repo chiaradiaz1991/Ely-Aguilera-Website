@@ -1,9 +1,22 @@
 .main-container-gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
-  margin-bottom: 80px;
-  background-size: 70%;
+  .gallery-title-section {
+    font-size: 24px;
+    color: #eba742;
+    align-self: center;
+  }
+  .taller-description {
+    font-size: 14px;
+    line-height: 23px;
+    max-width: 300px;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 40px;
+  }
   .side-gallery {
-    margin: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -15,10 +28,24 @@
   }
 }
 
-@include respond(desktop) {
+@include respond(tablet) {
   .main-container-gallery {
-    width: 100%;
-    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .gallery-title-section {
+      font-size: 30px;
+      color: #eba742;
+      align-self: center;
+    }
+    .taller-description {
+      font-size: 14px;
+      line-height: 23px;
+      max-width: 600px;
+      margin: auto;
+      text-align: left;
+      margin-bottom: 40px;
+    }
     .side-gallery {
       margin: 30px;
       display: flex;
@@ -27,7 +54,42 @@
       .image-gallery {
         margin: 10px;
         border-radius: 5px;
+        height: 250px;
+        transition: transform 0.4s ease-in-out;
+      }
+      .image-gallery:hover {
+        transform: scale(2);
+      }
+    }
+  }
+}
 
+@include respond(desktop) {
+  .main-container-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .gallery-title-section {
+      font-size: 30px;
+      color: #eba742;
+      align-self: center;
+    }
+    .taller-description {
+      font-size: 14px;
+      line-height: 23px;
+      max-width: 700px;
+      margin: auto;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+    .side-gallery {
+      margin: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .image-gallery {
+        margin: 10px;
+        border-radius: 5px;
         height: 250px;
         transition: transform 0.4s ease-in-out;
       }

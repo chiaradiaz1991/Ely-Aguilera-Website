@@ -4,23 +4,22 @@
   width: 100%;
   justify-content: space-between;
   .information-title-section {
-    font-size: 28px;
+    font-size: 24px;
     align-self: center;
     text-align: center;
-    color: $dark-yellow;
+    color: #eba742;
+    width: 300px;
   }
-  .map {
-    width: 350px;
+  .contact-container {
     margin: auto;
-    .map-img {
-      width: 300px;
-      margin: auto;
-      display: flex;
-    }
+    margin-bottom: 30px;
     .contact {
       margin-top: 30px;
       display: flex;
       flex-direction: column;
+      .class {
+        color: black;
+      }
       .social-media {
         display: flex;
         justify-content: center;
@@ -28,11 +27,11 @@
         .social-icon {
           width: 15px;
           height: auto;
-          margin-right: 10px;
         }
         .link {
           font-size: 14px;
           color: black;
+          margin-left: 10px;
         }
       }
     }
@@ -43,14 +42,11 @@
           width: 300px;
           font-weight: 600;
           font-size: 14px;
-          color: $blue-green;
+          color: black;
         }
         .address-description {
           width: 300px;
           font-size: 14px;
-        }
-        .class {
-          color: $red;
         }
       }
       .right {
@@ -59,7 +55,7 @@
 
           font-size: 14px;
           font-weight: 600;
-          color: $blue-green;
+          color: black;
         }
         .bus {
           width: 300px;
@@ -68,18 +64,15 @@
           .bus-description {
             display: flex;
             flex-direction: row;
+            font-size: 14px;
             .bus-description-text {
-              color: $green;
-              margin-right: 10px;
+              font-size: 14px;
+              color: black;
               strong {
                 color: black;
               }
             }
-            .image-bus-color {
-              height: 10px;
-              align-self: center;
-              margin-left: 10px;
-            }
+           
           }
         }
       }
@@ -89,93 +82,51 @@
 
 @include respond(tablet) {
   .main-container-info {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: space-between;
     .information-title-section {
-      font-size: 38px;
+      font-size: 30px;
+      color: #eba742;
       align-self: center;
-      text-align: center;
-      color: $dark-yellow;
     }
-    .map {
-      margin: auto;
-      .map-img {
-        width: 400px;
-        margin: auto;
-        display: flex;
-      }
+    .contact-container {
+      // width: 100%;
+      width: 700px;
+      margin-bottom: 30px;
       .left-right-container {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
         .left {
           .address {
-            width: 300px;
             font-weight: 600;
             font-size: 14px;
-            color: $blue-green;
+            color: black;
           }
           .address-description {
-            width: 300px;
-            font-size: 18px;
+            width: 100%;
+            font-size: 14px;
           }
         }
         .right {
           .transport {
-            width: 300px;
-
             font-size: 14px;
             font-weight: 600;
-            color: $blue-green;
+            color: black;
           }
           .bus {
-            width: 300px;
-            display: flex;
-            flex-direction: column;
+            width: 100%;
             .bus-description {
-              display: flex;
-              flex-direction: row;
-              .bus-description-text {
-                color: $green;
-                margin-right: 10px;
-                strong {
-                  color: black;
-                }
-              }
-              .image-bus-color {
-                height: 10px;
-                align-self: center;
-                margin-left: 10px;
-              }
+              font-size: 14px;
+              // display: flex;
+              // flex-direction: column;
+              // .bus-description-text {
+              //   color: black;
+              //   strong {
+              //     color: black;
+              //   }
+              // }
             }
           }
         }
-      }
-    }
-  }
-}
-
-@include respond(desktop) {
-  .main-container-info {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100%;
-    justify-content: space-between;
-    margin-bottom: 100px;
-    .information-title-section {
-      font-size: 70px;
-      align-self: center;
-      color: $dark-yellow;
-      padding-left: 30px;
-      text-align: left;
-      width: 50%;
-    }
-    .map {
-      width: 50%;
-      .map-img {
-        width: 550px;
-        margin: auto;
-        display: flex;
       }
       .contact {
         display: flex;
@@ -185,54 +136,7 @@
           .social-icon {
           }
           .link {
-          }
-        }
-      }
-      .left-right-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        .left  {
-          margin-right: 30px;
-          .address {
-            font-weight: 600;
-            font-size: 14px;
-            color: $blue-green;
-          }
-          .address-description {
-            font-size: 14px;
-          }
-          .groups {
-            font-size: 14px;
-            color: $violet;
-            font-weight: 600;
-          }
-        }
-        .right {
-          padding-left: 30px;
-          .transport {
-            font-size: 14px;
-            font-weight: 600;
-            color: $blue-green;
-          }
-          .bus {
-            display: flex;
-            .bus-description {
-              display: flex;
-              flex-direction: row;
-              .bus-description-text {
-                margin-right: 10px;
-                color: $green;
-                strong {
-                  color: black;
-                }
-              }
-              .image-bus-color {
-                height: 10px;
-                align-self: center;
-                margin-left: 10px;
-              }
-            }
+            margin-left: 10px;
           }
         }
       }
@@ -240,8 +144,58 @@
   }
 }
 
-@include respond(desktopLarge) {
+@include respond(desktop) {
   .main-container-info {
-    width: 1400px;
+    .information-title-section {
+      font-size: 30px;
+      color: #eba742;
+      align-self: center;
+    }
+    .contact-container {
+      // width: 100%;
+      width: 700px;
+      margin-bottom: 30px;
+      .left-right-container {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        .left {
+          .address {
+            font-weight: 600;
+            font-size: 14px;
+            color: black;
+          }
+          .address-description {
+            width: 100%;
+            font-size: 14px;
+          }
+        }
+        .right {
+          .transport {
+            font-size: 14px;
+            font-weight: 600;
+            color: black;
+          }
+          .bus {
+            width: 100%;
+            .bus-description {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .social-media  {
+          .social-icon {
+          }
+          .link {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
   }
 }

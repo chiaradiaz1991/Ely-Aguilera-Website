@@ -1,72 +1,14 @@
 .main-container {
-  .desktop-links {
-    display: none;
-  }
-  .mobile-links {
-    .logo{    
-      display: block;
-      height: 30px;
-      padding: 10px;
-    }
-  }
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: fixed;
-    bottom: 0;
-    height: 30px;
-    width: 100%;
-    font-size: 12px;
-    text-align: center;
-    }
+
 }
 
 @include respond(tablet) {
   .main-container {
     .desktop-links {
       display: flex;
-      ul {
-        background-color: $white;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        .logo-container {
-          .links {
-            list-style: none;
-            .nav-links {
-              .logo {
-                width: 100px;
-              }
-            }
-          }
-        }
-        .other-links {
-          margin-right: 10px;
-          display: flex;
-          flex-direction: row;
-          .links {
-            list-style: none;
-            margin-right: 30px;
-            .nav-links {
-              color: $blue-green;
-              font-size: 16px;
-              font-weight: bold;
-              text-decoration: none;
-            }
-            .active-link {
-              color: $pink;
-              font-size: 16px;
-              font-weight: bold;
-              text-decoration: none;
-            }
-          }
-        }
-      }
+
     }
-    .mobile-links {
-      display: none;
-    }
+ 
     footer {
     display: flex;
     flex-direction: row;

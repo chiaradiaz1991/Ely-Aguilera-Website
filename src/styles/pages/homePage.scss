@@ -1,58 +1,90 @@
 .main-container-home {
-  min-height: 400px;
-  background-image: url('../../assets/home-background.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  background-size: 90%;
-  display: flex;
-  justify-content: center;
-  .home-logo {
-    height: 200px;
-    margin: auto;
+  
+  // background-image: url("../../assets/home-background.png");
+
+  // background-repeat: no-repeat;
+  // background-size: contain;
+  // background-position: center;
+  // background-size: 100%;
+
+  // display: flex;
+  // justify-content: center;
+  // align-items: flex-end;
+  .container-image-home {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    // background: rgb(76,69,252);
+    // background: radial-gradient(circle, rgba(76,69,252,1) 0%, rgba(255,152,222,1) 50%, rgba(112,49,255,1) 100%);
+
+    width: 100vw;
+    height: 270px;
+
+    .home-logo {
+      height: 200px;
+      margin: auto;
+    }
   }
 }
 
 @include respond(tablet) {
   .main-container-home {
-    height: 80vh;
-    background-image: url('../../assets/home-background.png');
+    background-image: url("../../assets/home-background.png");
+
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right;
+    background-position: center;
+    background-size: 100%;
+
     display: flex;
-    // background-size: 100%;
-    
     justify-content: center;
-    .home-logo {
-      height: 300px;
-      margin: auto;
+    align-items: flex-end;
+    .container-image-home {
+      display: flex;
+      justify-content: center;
+      background-color: white;
+      // background: rgb(76,69,252);
+      // background: radial-gradient(circle, rgba(76,69,252,1) 0%, rgba(255,152,222,1) 50%, rgba(112,49,255,1) 100%);
+
+      width: 100vw;
+      height: 270px;
+
+      .home-logo {
+        height: 200px;
+        margin: auto;
+      }
     }
   }
 }
-
 
 @include respond(desktop) {
   .main-container-home {
-    height: 80vh;
-    background-image: url('../../assets/home-background.png');
+    height: 100vh;
+    background-image: url("../../assets/home-background.png");
+
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right;
+    background-position: center;
+    background-size: 100%;
+
     display: flex;
     justify-content: center;
-    .home-logo {
-      height: 300px;
-      margin: auto;
-    }
-  }
-}
+    align-items: flex-end;
 
-@include respond(desktopLarge) {
-  .main-container-home {
-    .home-logo {
-      height: 400px;
-      margin: auto;
+    .container-image-home {
+      display: flex;
+      justify-content: center;
+      background-color: white;
+      // background: rgb(76,69,252);
+      // background: radial-gradient(circle, rgba(76,69,252,1) 0%, rgba(255,152,222,1) 50%, rgba(112,49,255,1) 100%);
+
+      width: 100vw;
+      height: 270px;
+
+      .home-logo {
+        height: 300px;
+        margin: auto;
+      }
     }
   }
 }
