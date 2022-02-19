@@ -1,7 +1,7 @@
 import React from "react";
 import Map from "../../Components/Map";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faCamera, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faCamera, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 
 const Information = () => {
