@@ -1,16 +1,8 @@
+@import "./mixins/mixins";
+@import "./global/variables";
 
-@import './mixins/mixins';
-@import './global/variables';
-
-
-@import './pages/aboutMe.scss';
-@import './pages/gallery.scss';
-@import './pages/homePage.scss';
-@import './pages/information.scss';
-@import './components/wrapper.scss';
-@import './components/app.scss';
-@import './components/scroll.scss';
-@import './components/map.scss';
-
-
-
+@import "./pages/aboutMe.scss";
+@import "./pages/gallery.scss";
+@import "./pages/homePage.scss";
+@import "./pages/information.scss";
+@import "./components/app.scss";

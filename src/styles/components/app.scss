@@ -1,81 +1,75 @@
 .main-container {
+  font-size: 1em;
 
-}
-
-@include respond(tablet) {
-  .main-container {
-    .desktop-links {
-      display: flex;
-
-    }
- 
-    footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  .section {
+    padding: 50px 0px;
+  }
+  header {
     position: fixed;
-    bottom: 0;
-    height: 30px;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    font-size: 12px;
+    background-color: #ff8a80;
+    padding: 10px 100px 10px 20px;
+    height: 65px;
+
+    .logo-header {
+      width: 200px;
+      height: auto;
+    }
+    .header-links {
+      display: flex;
+      width: 30%;
+      justify-content: space-between;
+
+      .link {
+        list-style: none;
+        padding-bottom: 4px;
+        font-size: 1.1em;
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        color: white;
+        background-color: transparent;
+        border: none;
+      }
+      .link::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+      .link:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
     }
   }
 }
 
-@include respond(desktop) {
+@include respond(tablet) {
   .main-container {
-    .desktop-links {
-      display: flex;
-      ul {
-        background-color: $white;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        .logo-container {
-          .links {
-            list-style: none;
-            .nav-links {
-              .logo {
-                width: 120px;
-              }
-            }
-          }
-        }
-        .other-links {
-          margin-right: 50px;
-          display: flex;
-          flex-direction: row;
-          .links {
-            list-style: none;
-            margin-right: 30px;
-            .nav-links {
-              color: $blue-green;
-              font-size: 16px;
-              font-weight: bold;
-              text-decoration: none;
-            }
-            .active-link {
-              color: $pink;
-              font-size: 16px;
-              font-weight: bold;
-              text-decoration: none;
-            }
-          }
-        }
-      }
-    }
-    .mobile-links {
-      display: none;
-    }
+    // .desktop-links {
+    //   display: flex;
+    // }
+
     footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: fixed;
-    bottom: 0;
-    height: 30px;
-    width: 100%;
-    font-size: 12px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      position: fixed;
+      bottom: 0;
+      height: 30px;
+      width: 100%;
+      font-size: 12px;
     }
   }
 }

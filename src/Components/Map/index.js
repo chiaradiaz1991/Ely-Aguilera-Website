@@ -1,12 +1,12 @@
 import * as React from "react";
 import ReactMapGL, { Marker } from "react-map-gl";
-import icon from '../../assets/mapMarker.png';
+import icon from "../../assets/mapMarker.png";
 
 function Map() {
   const [viewport, setViewport] = React.useState({
     latitude: -34.511661,
     longitude: -58.568748,
-    zoom: 14,
+    zoom: 30,
   });
 
   return (

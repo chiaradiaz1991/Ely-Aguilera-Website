@@ -1,90 +1,38 @@
 .main-container-home {
-  
-  // background-image: url("../../assets/home-background.png");
+  background-image: url("../../assets/paleta.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  .home-logo {
+    height: 200px;
+    margin: auto;
+  }
+  @include respond(tablet) {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 
-  // background-repeat: no-repeat;
-  // background-size: contain;
-  // background-position: center;
-  // background-size: 100%;
-
-  // display: flex;
-  // justify-content: center;
-  // align-items: flex-end;
-  .container-image-home {
     display: flex;
     justify-content: center;
-    background-color: white;
-    // background: rgb(76,69,252);
-    // background: radial-gradient(circle, rgba(76,69,252,1) 0%, rgba(255,152,222,1) 50%, rgba(112,49,255,1) 100%);
-
-    width: 100vw;
-    height: 270px;
+    align-items: flex-end;
 
     .home-logo {
-      height: 200px;
+      height: 400px;
       margin: auto;
     }
   }
-}
-
-@include respond(tablet) {
-  .main-container-home {
-    background-image: url("../../assets/home-background.png");
-
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-size: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    .container-image-home {
-      display: flex;
-      justify-content: center;
-      background-color: white;
-      // background: rgb(76,69,252);
-      // background: radial-gradient(circle, rgba(76,69,252,1) 0%, rgba(255,152,222,1) 50%, rgba(112,49,255,1) 100%);
-
-      width: 100vw;
-      height: 270px;
-
-      .home-logo {
-        height: 200px;
-        margin: auto;
-      }
-    }
-  }
-}
-
-@include respond(desktop) {
-  .main-container-home {
+  @include respond(desktop) {
     height: 100vh;
-    background-image: url("../../assets/home-background.png");
-
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
     background-size: 100%;
 
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: flex-end;
 
-    .container-image-home {
-      display: flex;
-      justify-content: center;
-      background-color: white;
-      // background: rgb(76,69,252);
-      // background: radial-gradient(circle, rgba(76,69,252,1) 0%, rgba(255,152,222,1) 50%, rgba(112,49,255,1) 100%);
-
-      width: 100vw;
-      height: 270px;
-
-      .home-logo {
-        height: 300px;
-        margin: auto;
-      }
+    .home-logo {
+      height: 400px;
+      margin: auto;
     }
   }
 }

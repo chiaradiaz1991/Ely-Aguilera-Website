@@ -7,91 +7,45 @@
   background-size: 50%;
   background-position: bottom right;
   margin-bottom: 60px;
-  .about-title-section {
-    font-size: 24px;
-    align-self: center;
-    text-align: left;
-    color: #eba742;
+
+  @include respond(desktop) {
+    display: flex;
+    flex-direction: row;
+    padding: 80px 50px 40px 50px;
   }
 
-  .side-about {
-    .ely-photo {
-      margin: auto;
-      display: flex;
-      height: 200px;
+  .ely-photo {
+    margin: auto;
+    display: flex;
+    height: 200px;
+    border-radius: 6px;
+    @include respond(desktop) {
+      width: auto;
+      height: 400px;
     }
+  }
+
+  .about-me-text {
+    @include respond(desktop) {
+      width: 50%;
+    }
+    .about-title-section {
+      font-size: 1.5em;
+      align-self: center;
+      text-align: left;
+      color: #ff8a80;
+    }
+
     .description-about {
-      font-size: 14px;
+      font-size: 1em;
       line-height: 23px;
       width: 300px;
       margin: auto;
       text-align: left;
       margin-top: 30px;
-    }
-  }
-}
 
-@include respond(tablet) {
-  .main-container-about {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 60px;
-    .about-title-section {
-      font-size: 30px;
-      align-self: center;
-      text-align: left;
-      color: #eba742;
-    }
-  
-    .side-about {
-      // margin-top: -100px;
-      .ely-photo {
-        margin: auto;
-        display: flex;
-        height: 200px;
-      }
-      .description-about {
-        font-size: 14px;
-        line-height: 23px;
-        width: 600px;
-        margin: auto;
-        text-align: left;
-        margin-top: 30px;
-      }
-    }
-  }
-}
-
-@include respond(desktop) {
-  .main-container-about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    .about-title-section {
-      font-size: 30px;
-      color: #eba742;
-      align-self: center;
-      width: 200px;
-      text-align: center;
-      border-radius: 30px;
-      margin-bottom: 30px;
-    }
-    .side-about {
-      margin-bottom: 30px;
-      .ely-photo {
-        margin: auto;
-        display: flex;
-        height: 250px;
-      }
-      .description-about {
-        font-size: 14px;
-        line-height: 23px;
-        width: 700px;
-        margin: auto;
-        margin-top: 30px;
-        text-align: left;
+      @include respond(desktop) {
+        width: 100%;
       }
     }
   }

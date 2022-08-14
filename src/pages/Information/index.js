@@ -1,58 +1,71 @@
 import React from "react";
+import Title from "../../Components/Title";
+import { SiInstagram } from "react-icons/si";
 import Map from "../../Components/Map";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCamera, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-
+import { BsEnvelope } from "react-icons/bs";
 
 const Information = () => {
   return (
-    <>
-      <div role="main" className="main-container-info">
-        <h1 className="information-title-section">CONTACTO</h1>
-        <div className="contact-container">
-          <div className="left-right-container">
-            <div className="left">
-              <p className="address">Dirección</p>
-              <p className="address-description">
-                Olazabal 169, entre Uriarte y Antonio Saenz, Boulogne Sur Mer
-                (Zona Norte).
-              </p>
-            </div>
-            <div className="right">
-              <h3 className="transport">Medios de transporte</h3>
-              <div className="bus">
-                <div className="bus-description">Colectivo 314 | Colectivo 707 | Colectivo 138 (Costera) | Colectivo 437 | Colectivo 130 (Estación Boulogne Sur Mer)</div>
-              </div>
-            </div>
-          </div>
-          <div className="contact">
-            <div className="social-media">
-            <FontAwesomeIcon icon={faEnvelope} />
-              
-              <a
-                href="mailto:taller.elyaguilera@gmail.com"
-                target="_blank"
-                className="link"
-              >
-                taller.elyaguilera@gmail.com
-              </a>
-            </div>
-            <div className="social-media">
-            <FontAwesomeIcon icon={faCamera} />
-              
-              <a
-                href="https://www.instagram.com/taller.elyaguilera/"
-                target="_blank"
-                className="link"
-              >
-                taller.elyaguilera
-              </a>
-            </div>
+    <div role="main" className="main-container-info">
+      <Title>CONTACTO</Title>
+      <div className="contact-container">
+        <div className="contact-text">
+          <p className="contact-section-title">Dirección</p>
+          <p className="address-description">
+            Coronel Castillo 18, Boulogne Sur Mer (Zona Norte, Bs As).
+          </p>
+
+          <p className="contact-section-title">Medios de transporte</p>
+          <div className="bus">
+            <ul className="bus-description">
+              <li>
+                <span className="bullet"></span>Colectivo 314
+              </li>
+              <li>
+                <span className="bullet"></span>Colectivo 707
+              </li>
+              <li>
+                <span className="bullet"></span>Colectivo 138 (Costera)
+              </li>
+              <li>
+                <span className="bullet"></span>Colectivo 437
+              </li>
+              <li>
+                <span className="bullet"></span>Colectivo 130 (Estación Boulogne Sur Mer)
+              </li>
+            </ul>
           </div>
         </div>
-        <Map />
+        <div className="contact">
+          <p className="contact-section-title">Mis Redes</p>
+          <div className="social-media">
+            <BsEnvelope size={20} color="#ff8a80" />
+
+            <a
+              rel="noreferrer"
+              href="mailto:taller.elyaguilera@gmail.com"
+              target="_blank"
+              className="link"
+            >
+              taller.elyaguilera@gmail.com
+            </a>
+          </div>
+          <div className="social-media">
+            <SiInstagram size={20} color="#ff8a80" />
+
+            <a
+              rel="noreferrer"
+              href="https://www.instagram.com/taller.elyaguilera/"
+              target="_blank"
+              className="link"
+            >
+              taller.elyaguilera
+            </a>
+          </div>
+        </div>
       </div>
-    </>
+      <Map />
+    </div>
   );
 };
 
