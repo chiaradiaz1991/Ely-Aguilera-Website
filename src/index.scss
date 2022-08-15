@@ -13,6 +13,7 @@ body {
 
 ul {
   list-style: none;
+  padding: 0px;
 }
 li {
   text-decoration: none;
@@ -39,16 +40,4 @@ li {
 .title-hover-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
-}
-
-.scroll-to-top {
-  background-color: transparent;
-  border: none;
-
-  position: fixed;
-  width: 100%;
-  left: 45%;
-  bottom: 40px;
-  z-index: 999;
-  cursor: pointer;
 }

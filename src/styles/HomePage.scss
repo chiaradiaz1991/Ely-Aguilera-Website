@@ -1,10 +1,13 @@
 .main-container-home {
-  background-image: url("../../assets/paleta.png");
+  background-image: url("../assets/paleta.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
   .home-logo {
-    height: 200px;
+    height: 100px;
     margin: auto;
   }
   @include respond(tablet) {

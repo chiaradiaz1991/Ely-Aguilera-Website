@@ -4,27 +4,38 @@
   justify-content: center;
   width: 100%;
 
+  @include respond(desktop) {
+    padding: 30px 0px;
+  }
+
   .el-taller-text {
     width: 100%;
-    padding: 0px 50px;
-    text-align: center;
+    text-align: left;
+    padding: 0px 20px;
+
+    @include respond(desktop) {
+      padding: 0px 50px;
+      text-align: center;
+    }
 
     .taller-description {
-      padding: 0px 0px 40px 0px;
-      @include respond(phone) {
-        font-size: 1em;
-        line-height: 23px;
-        max-width: 300px;
-        margin: auto;
-        text-align: left;
-        margin-bottom: 40px;
-      }
+      font-size: 1em;
+      line-height: 23px;
 
-      @include respond(tablet) {
-        width: 100%;
+      margin: auto;
+      text-align: left;
+      margin-bottom: 20px;
+
+      span {
+        color: $pink;
       }
 
       @include respond(desktop) {
+        padding: 0px 0px 40px 0px;
+        width: 100%;
+      }
+
+      @include respond(tablet) {
         width: 100%;
       }
     }
@@ -33,7 +44,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0px 50px;
+    padding: 0px;
+
+    @include respond(desktop) {
+      padding: 0px 50px;
+    }
     .image-gallery {
       height: 200px;
       margin: 10px;

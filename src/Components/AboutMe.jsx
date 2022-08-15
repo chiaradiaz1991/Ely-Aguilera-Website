@@ -1,8 +1,8 @@
 import React from "react";
-import photo from "../../assets/about-me-img.jpeg";
-import Title from "../../Components/Title";
+import photo from "../assets/about-me-img.jpeg";
+import { Title } from ".";
 
-const AboutMe = () => {
+export const AboutMe = () => {
   return (
     <div className="main-container-about">
       <img src={photo} alt="" className="ely-photo" />
@@ -27,5 +27,3 @@ const AboutMe = () => {
     </div>
   );
 };
-
-export default AboutMe;

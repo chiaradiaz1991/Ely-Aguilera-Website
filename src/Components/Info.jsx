@@ -1,14 +1,14 @@
 import React from "react";
-import Title from "../../Components/Title";
-import { SiInstagram } from "react-icons/si";
-import Map from "../../Components/Map";
+import { Title } from "../Components";
 import { BsEnvelope } from "react-icons/bs";
+import { SiInstagram } from "react-icons/si";
+import mapa from "../../src/assets/mapa.png";
 
-const Information = () => {
+export const Info = () => {
   return (
     <div role="main" className="main-container-info">
-      <Title>CONTACTO</Title>
       <div className="contact-container">
+        <Title>CONTACTO</Title>
         <div className="contact-text">
           <p className="contact-section-title">Dirección</p>
           <p className="address-description">
@@ -64,9 +64,7 @@ const Information = () => {
           </div>
         </div>
       </div>
-      <Map />
+      <img src={mapa} alt="mapa" />
     </div>
   );
 };
-
-export default Information;

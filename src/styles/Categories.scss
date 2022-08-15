@@ -1,0 +1,44 @@
+.categories-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+
+  @include respond(desktop) {
+    flex-direction: row;
+    padding: 0px 50px 50px 50px;
+    justify-content: center;
+  }
+
+  .filter-btn {
+    background-color: #ff8b8029;
+    color: $pink;
+    border: transparent;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 10px 5px;
+    width: 45%;
+    display: inline-block;
+    position: relative;
+    font-size: 1.1em;
+    height: 50px;
+
+    @include respond(desktop) {
+      padding: 0px 10px;
+      margin: 10px 0px;
+      height: 50px;
+      min-width: 10px;
+      max-width: 160px;
+    }
+
+    @include respond(desktop) {
+      margin: 0px 10px;
+    }
+  }
+
+  .filter-btn:hover {
+    background-color: #26a69a;
+    color: white;
+  }
+}

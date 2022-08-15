@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
 
-const ScrollButton = () => {
+export const ScrollToTop = () => {
   const [visible, setVisible] = useState(false);
 
   const toggleVisible = () => {
@@ -32,5 +32,3 @@ const ScrollButton = () => {
     </button>
   );
 };
-
-export default ScrollButton;

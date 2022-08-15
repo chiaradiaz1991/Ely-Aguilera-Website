@@ -1,0 +1,43 @@
+.main-container-info {
+  padding: 0px 20px;
+  @include respond(desktop) {
+    padding: 30px 100px;
+  }
+
+  .contact-section-title {
+    font-size: 1.1em;
+    text-decoration: underline;
+  }
+  .bus-description {
+    @include respond(desktop) {
+      padding: 0px 0px 20px 0px;
+    }
+    li {
+      padding: 10px 0px;
+      .bullet {
+        display: inline-block;
+        background-color: $pink;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .contact {
+    padding: 0px 0px 30px 0px;
+    .social-media {
+      display: flex;
+      align-items: center;
+      padding: 10px 0px;
+      a {
+        padding-left: 10px;
+        color: black;
+      }
+    }
+    .social-media a:hover {
+      color: #ff8a80;
+    }
+  }
+}

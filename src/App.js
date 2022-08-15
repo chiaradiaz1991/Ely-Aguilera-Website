@@ -1,43 +1,126 @@
-import React, { useRef } from "react";
-import HomePage from "./pages/HomePage";
-import AboutMe from "./pages/AboutMe";
-import Gallery from "./pages/Gallery";
-import Information from "./pages/Information";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { useRef, useState, useEffect } from "react";
 import headerLogo from "../src/assets/ELyOneLine.png";
-import ScrollToTop from "./Components/ScrollToTop";
+import { ScrollToTop, Workshops, Home, Gallery, Info, AboutMe } from "./Components";
+import { Cross as Hamburger } from "hamburger-react";
+import { motion } from "framer-motion";
+import { BsEnvelope } from "react-icons/bs";
+import { SiInstagram } from "react-icons/si";
+
+const menuVariants = {
+  opened: {
+    top: 0,
+  },
+  closed: {
+    top: "-100vh",
+  },
+};
 
 const App = () => {
   const mainRef = useRef(null);
   const sobreMiRef = useRef(null);
   const alumnosRef = useRef(null);
   const infoRef = useRef(null);
+  const seminariosRef = useRef(null);
+  const [isOpen, setOpen] = useState(false);
 
-  const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+  const scrollToRef = (ref) => ref.current.scrollIntoView({ behavior: "smooth" });
+
+  const [windowDimension, setWindowDimension] = useState(null);
+
+  useEffect(() => {
+    setWindowDimension(window.innerWidth);
+  }, []);
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimension(window.innerWidth);
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const isMobile = windowDimension <= 640;
 
   return (
     <div role="main" className="main-container">
       <header>
-        <img
-          src={headerLogo}
-          alt="ely-aguilera-taller-de-arte-y-creatividad-logo"
-          className="logo-header"
-        />
-
-        <div className="header-links">
+        <div className="container-header">
+          <img
+            onClick={() => scrollToRef(mainRef)}
+            src={headerLogo}
+            alt="ely-aguilera-taller-de-arte-y-creatividad-logo"
+            className="logo-header"
+          />
+          <div className="burger-container">
+            <Hamburger toggled={isOpen} toggle={setOpen} color="#fdf0ed" />
+          </div>
+        </div>
+        <div className="links-desktop">
           <button onClick={() => scrollToRef(sobreMiRef)} className="link">
-            Sobre Mi
+            Sobre Mí
           </button>
           <button onClick={() => scrollToRef(alumnosRef)} className="link">
-            Alumnos
+            El Taller
+          </button>
+          <button onClick={() => scrollToRef(seminariosRef)} className="link">
+            Workshops
           </button>
           <button onClick={() => scrollToRef(infoRef)} className="link">
-            Info
+            Información
           </button>
         </div>
+        <motion.div
+          className="header-links"
+          initial={false}
+          animate={isOpen && isMobile ? "opened" : "closed"}
+          variants={menuVariants}
+        >
+          <button onClick={() => scrollToRef(sobreMiRef)} className="link">
+            Sobre Mí
+          </button>
+          <button onClick={() => scrollToRef(alumnosRef)} className="link">
+            El Taller
+          </button>
+          <button onClick={() => scrollToRef(seminariosRef)} className="link">
+            Workshops
+          </button>
+          <button onClick={() => scrollToRef(infoRef)} className="link">
+            Información
+          </button>
+
+          <div className="redes-header-mobile">
+            <p>Mis redes sociales</p>
+            <div className="redes">
+              <BsEnvelope size={20} color="#ff8a80" />
+
+              <a
+                rel="noreferrer"
+                href="mailto:taller.elyaguilera@gmail.com"
+                target="_blank"
+                className="link"
+              >
+                taller.elyaguilera@gmail.com
+              </a>
+            </div>
+
+            <div className="redes">
+              <SiInstagram size={20} color="#ff8a80" />
+
+              <a
+                rel="noreferrer"
+                href="https://www.instagram.com/taller.elyaguilera/"
+                target="_blank"
+                className="link"
+              >
+                taller.elyaguilera
+              </a>
+            </div>
+          </div>
+        </motion.div>
       </header>
       <div ref={mainRef} className="section">
-        <HomePage />
+        <Home />
       </div>
 
       <div ref={sobreMiRef} className="section">
@@ -46,9 +129,12 @@ const App = () => {
       <div ref={alumnosRef} className="section">
         <Gallery />
       </div>
+      <div ref={seminariosRef} className="section">
+        <Workshops />
+      </div>
 
       <div ref={infoRef} className="section">
-        <Information />
+        <Info />
       </div>
       <ScrollToTop />
     </div>

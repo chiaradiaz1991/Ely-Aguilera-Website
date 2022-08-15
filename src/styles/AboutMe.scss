@@ -1,12 +1,13 @@
 .main-container-about {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   width: 100%;
   justify-content: space-between;
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: bottom right;
   margin-bottom: 60px;
+  padding: 0px 20px;
 
   @include respond(desktop) {
     display: flex;
@@ -17,7 +18,8 @@
   .ely-photo {
     margin: auto;
     display: flex;
-    height: 200px;
+    height: auto;
+    width: 100%;
     border-radius: 6px;
     @include respond(desktop) {
       width: auto;
@@ -26,6 +28,8 @@
   }
 
   .about-me-text {
+    width: 100%;
+
     @include respond(desktop) {
       width: 50%;
     }
@@ -40,9 +44,11 @@
       font-size: 1em;
       line-height: 23px;
       width: 300px;
-      margin: auto;
       text-align: left;
-      margin-top: 30px;
+
+      @include respond(desktop) {
+        margin-top: 30px;
+      }
 
       @include respond(desktop) {
         width: 100%;

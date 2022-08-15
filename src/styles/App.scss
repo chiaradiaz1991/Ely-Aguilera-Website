@@ -1,0 +1,206 @@
+.main-container {
+  font-size: 1em;
+
+  .section {
+    @include respond(desktop) {
+      padding: 50px 0px;
+    }
+  }
+  header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: $pink;
+    padding: 20px;
+    height: 50px;
+    display: flex;
+
+    @include respond(desktop) {
+      height: 65px;
+      padding: 10px 100px 10px 20px;
+    }
+
+    .container-header {
+      display: flex;
+      justify-content: space-between;
+
+      .logo-header {
+        width: 200px;
+        height: auto;
+      }
+
+      .burger-container {
+        display: flex;
+        z-index: 999;
+        position: fixed;
+        right: 10px;
+        top: 0px;
+        width: 50px;
+        height: auto;
+
+        @include respond(desktop) {
+          display: none;
+        }
+      }
+    }
+
+    .links-desktop {
+      display: none;
+      @include respond(desktop) {
+        display: inline-block;
+      }
+      .link {
+        @include respond(desktop) {
+          padding: 0px 20px;
+          display: inline-block;
+          text-align: center;
+          list-style: none;
+          padding-bottom: 4px;
+          font-size: 1.1em;
+          cursor: pointer;
+
+          position: relative;
+          color: white;
+          background-color: transparent;
+          border: none;
+
+          display: inline;
+          text-align: left;
+        }
+      }
+      .link::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+      .link:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+    }
+
+    .header-links {
+      background-color: $green;
+      font-size: 1em;
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: 998;
+      display: flex;
+      flex-direction: column;
+      padding-top: 30px;
+
+      @include respond(desktop) {
+        display: none;
+      }
+
+      .link {
+        list-style: none;
+        padding-bottom: 4px;
+        font-size: 1.1em;
+        cursor: pointer;
+
+        position: relative;
+        color: white;
+        background-color: transparent;
+        border: none;
+        padding: 20px 0px;
+
+        display: inline;
+        text-align: left;
+        padding: 20px;
+
+        @include respond(desktop) {
+          padding: 0px;
+          display: inline-block;
+          text-align: center;
+        }
+      }
+      .link::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+      .link:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+
+      .redes-header-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        p {
+          color: white;
+          font-size: 1.1em;
+        }
+
+        .redes {
+          display: flex;
+          align-items: center;
+          text-align: left;
+
+          a,
+          a:visited {
+            color: white;
+          }
+          @include respond(desktop) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.scroll-to-top {
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  width: 100%;
+  left: 38%;
+  bottom: 40px;
+  z-index: 999;
+  cursor: pointer;
+  @include respond(desktop) {
+    left: 45%;
+    bottom: 40px;
+  }
+}
+
+.workshops {
+  background-color: #ff8b8021;
+  color: #ff8a80;
+  min-height: auto;
+  padding: 30px 20px;
+
+  @include respond(desktop) {
+    min-height: 350px;
+    padding: 50px 100px;
+  }
+
+  .link-workshop,
+  .link-workshop:visited {
+    color: $green;
+    text-decoration: none;
+  }
+}
