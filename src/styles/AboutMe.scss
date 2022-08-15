@@ -30,6 +30,9 @@
   .about-me-text {
     width: 100%;
 
+    @include respond(tablet) {
+      width: 100%;
+    }
     @include respond(desktop) {
       width: 50%;
     }
@@ -45,6 +48,11 @@
       line-height: 23px;
       width: 300px;
       text-align: left;
+
+      @include respond(tablet) {
+        width: 100%;
+        padding: 20px 0px;
+      }
 
       @include respond(desktop) {
         margin-top: 30px;

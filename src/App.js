@@ -8,7 +8,7 @@ import { SiInstagram } from "react-icons/si";
 
 const menuVariants = {
   opened: {
-    top: 0,
+    top: "50px",
   },
   closed: {
     top: "-100vh",

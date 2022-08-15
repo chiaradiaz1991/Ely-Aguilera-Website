@@ -1,9 +1,18 @@
 .main-container-info {
   padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   @include respond(desktop) {
     padding: 30px 100px;
   }
 
+  .mapa {
+    border-radius: 10px;
+
+    height: auto;
+  }
   .contact-section-title {
     font-size: 1.1em;
     text-decoration: underline;

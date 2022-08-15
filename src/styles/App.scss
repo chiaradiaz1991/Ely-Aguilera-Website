@@ -33,13 +33,17 @@
       }
 
       .burger-container {
-        display: flex;
+        display: none;
         z-index: 999;
         position: fixed;
         right: 10px;
         top: 0px;
         width: 50px;
         height: auto;
+
+        @include respond(tablet) {
+          display: none;
+        }
 
         @include respond(desktop) {
           display: none;
@@ -49,10 +53,30 @@
 
     .links-desktop {
       display: none;
+      @include respond(tablet) {
+        display: inline-block;
+      }
       @include respond(desktop) {
         display: inline-block;
       }
+
       .link {
+        @include respond(tablet) {
+          padding: 0px 20px;
+          display: inline-block;
+          text-align: center;
+          list-style: none;
+          padding-bottom: 4px;
+          font-size: 1.1em;
+          cursor: pointer;
+          position: relative;
+          color: white;
+          background-color: transparent;
+          border: none;
+
+          display: inline;
+          text-align: left;
+        }
         @include respond(desktop) {
           padding: 0px 20px;
           display: inline-block;
@@ -90,7 +114,8 @@
     }
 
     .header-links {
-      background-color: $green;
+      background-color: white;
+      color: $pink;
       font-size: 1em;
       height: 100vh;
       width: 100%;
@@ -100,6 +125,8 @@
       display: flex;
       flex-direction: column;
       padding-top: 30px;
+      left: 0;
+      right: 0;
 
       @include respond(desktop) {
         display: none;
@@ -112,7 +139,7 @@
         cursor: pointer;
 
         position: relative;
-        color: white;
+        color: $pink;
         background-color: transparent;
         border: none;
         padding: 20px 0px;
@@ -150,7 +177,7 @@
         align-items: flex-start;
         padding: 20px;
         p {
-          color: white;
+          color: $green;
           font-size: 1.1em;
         }
 
@@ -161,7 +188,7 @@
 
           a,
           a:visited {
-            color: white;
+            color: $green;
           }
           @include respond(desktop) {
             display: none;
