@@ -9,7 +9,7 @@ export const Workshops = () => {
     <div className="workshops">
       <Title>Workshops</Title>
       <p>
-        En mi (este) taller hacemos cursos donde podés aprender a trabajar con diferentes técnicas y
+        En mi (éste) taller hacemos cursos donde podés aprender a trabajar con diferentes técnicas y
         materiales tales como óleos, acuarelas, tiza pastel, óleos pastel, mix media, entre otros.
       </p>
       <div>
