@@ -25,9 +25,11 @@ li {
   position: inherit;
   font-size: 1.5em;
   color: #ff8a80;
+  line-height: 0px;
 
   @include respond(desktop) {
     position: relative;
+    line-height: inherit;
   }
 }
 .title-hover-animation::after {
@@ -46,5 +48,3 @@ li {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
-

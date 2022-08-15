@@ -20,11 +20,12 @@
     margin: 10px 5px;
     width: 45%;
     display: inline-block;
-    position: relative;
+    position: inherit;
     font-size: 1.1em;
     height: 50px;
 
     @include respond(desktop) {
+      position: relative;
       padding: 0px 10px;
       margin: 10px 0px;
       height: 50px;

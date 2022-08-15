@@ -47,7 +47,7 @@
       }
 
       .burger-container {
-        display: none;
+        display: flex;
         z-index: 999;
         position: fixed;
         right: 10px;
@@ -151,15 +151,14 @@
         padding-bottom: 4px;
         font-size: 1.1em;
         cursor: pointer;
-
         position: relative;
         color: $pink;
         background-color: transparent;
         border: none;
         padding: 20px 0px;
-
+        font-family: "Poppins", sans-serif;
         display: inline;
-        text-align: left;
+        text-align: center;
         padding: 20px;
 
         @include respond(desktop) {
@@ -167,6 +166,23 @@
           display: inline-block;
           text-align: center;
         }
+      }
+      .link:nth-child(1) {
+        border-bottom: 1px solid $pink;
+        border-top: 1px solid $pink;
+        text-transform: uppercase;
+      }
+      .link:nth-child(2) {
+        text-transform: uppercase;
+      }
+      .link:nth-child(3) {
+        border-top: 1px solid $pink;
+        text-transform: uppercase;
+      }
+      .link:nth-child(4) {
+        border-bottom: 1px solid $pink;
+        border-top: 1px solid $pink;
+        text-transform: uppercase;
       }
       .link::after {
         content: "";
@@ -199,10 +215,12 @@
           display: flex;
           align-items: center;
           text-align: left;
+          border-bottom: none;
 
           a,
           a:visited {
             color: $green;
+            text-transform: lowercase;
           }
           @include respond(desktop) {
             display: none;
@@ -232,7 +250,7 @@
   background-color: #ff8b8021;
   color: #ff8a80;
   min-height: auto;
-  padding: 30px 20px;
+  padding: 55px 20px 20px 20px;
 
   @include respond(desktop) {
     min-height: 350px;

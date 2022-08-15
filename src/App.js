@@ -23,7 +23,10 @@ const App = () => {
   const seminariosRef = useRef(null);
   const [isOpen, setOpen] = useState(false);
 
-  const scrollToRef = (ref) => ref.current.scrollIntoView({ behavior: "smooth" });
+  const scrollToRef = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+    setOpen(false);
+  };
 
   const [windowDimension, setWindowDimension] = useState(null);
 
