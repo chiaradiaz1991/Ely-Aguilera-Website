@@ -5,6 +5,7 @@ import { Cross as Hamburger } from "hamburger-react";
 import { motion } from "framer-motion";
 import { BsEnvelope } from "react-icons/bs";
 import { SiInstagram } from "react-icons/si";
+import { FaFacebookSquare } from "react-icons/fa";
 
 const menuVariants = {
   opened: {
@@ -117,6 +118,17 @@ const App = () => {
                 className="link"
               >
                 taller.elyaguilera
+              </a>
+            </div>
+            <div className="redes">
+              <FaFacebookSquare size={20} color="#ff8a80" />
+              <a
+                rel="noreferrer"
+                href="https://www.facebook.com/ely.scrap"
+                target="_blank"
+                className="link"
+              >
+                Ely Aguilera
               </a>
             </div>
           </div>

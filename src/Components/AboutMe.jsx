@@ -8,7 +8,6 @@ export const AboutMe = () => {
       <img src={photo} alt="" className="ely-photo" />
 
       <div className="about-me-text">
-        {/* <h1 className="about-title-section">SOBRE MI</h1> */}
         <Title>SOBRE MI</Title>
         <p className="description-about">
           Nací en Buenos Aires, Argentina. Estoy casada y tengo 3 hijas. Desde pequeña me sedujo

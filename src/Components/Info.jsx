@@ -20,7 +20,7 @@ export const Info = () => {
   return (
     <div role="main" className="main-container-info">
       <div className="contact-container">
-        <Title>CONTACTO</Title>
+        <Title>INFORMACION</Title>
         <div className="contact-text">
           <p className="contact-section-title">Dirección</p>
           <p className="address-description">
@@ -56,33 +56,6 @@ export const Info = () => {
                 <span className="bullet"></span>Colectivo 130 (Estación Boulogne Sur Mer)
               </li>
             </ul>
-          </div>
-        </div>
-        <div className="contact">
-          <p className="contact-section-title">Mis Redes</p>
-          <div className="social-media">
-            <BsEnvelope size={20} color="#ff8a80" />
-
-            <a
-              rel="noreferrer"
-              href="mailto:taller.elyaguilera@gmail.com"
-              target="_blank"
-              className="link"
-            >
-              taller.elyaguilera@gmail.com
-            </a>
-          </div>
-          <div className="social-media">
-            <SiInstagram size={20} color="#ff8a80" />
-
-            <a
-              rel="noreferrer"
-              href="https://www.instagram.com/taller.elyaguilera/"
-              target="_blank"
-              className="link"
-            >
-              taller.elyaguilera
-            </a>
           </div>
         </div>
       </div>

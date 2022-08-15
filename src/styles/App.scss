@@ -219,6 +219,7 @@
 
           a,
           a:visited {
+            padding: 10px 0px 10px 10px;
             color: $green;
             text-transform: lowercase;
           }
@@ -257,9 +258,23 @@
     padding: 50px 100px;
   }
 
+  .redes-workshop {
+    padding: 20px 0px;
+  }
   .link-workshop,
-  .link-workshop:visited {
+  .redes:visited {
     color: $green;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+
+    @include respond(desktop) {
+      justify-content: flex-start;
+    }
+    span {
+      padding-right: 10px;
+    }
   }
 }
