@@ -3,15 +3,25 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   @include respond(desktop) {
     padding: 30px 100px;
+    flex-direction: row;
   }
 
   .mapa {
     border-radius: 10px;
-
     height: auto;
+    width: 100%;
+    margin-bottom: 120px;
+
+    @include respond(desktop) {
+      height: 500px;
+      padding-bottom: 0px;
+      padding-left: 30px;
+      width: 50%;
+    }
   }
   .contact-section-title {
     font-size: 1.1em;

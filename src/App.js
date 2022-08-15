@@ -137,6 +137,9 @@ const App = () => {
         <Info />
       </div>
       <ScrollToTop />
+      <footer className="footer">
+        <p>Hecho con ♥️ por tus gemelas 👯‍♀️</p>
+      </footer>
     </div>
   );
 };
