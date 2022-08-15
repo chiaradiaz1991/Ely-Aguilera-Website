@@ -1,0 +1,38 @@
+.sidebar {
+  background-color: $pink;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 3px solid red;
+
+  .logo-sidebar {
+    width: 90px;
+  }
+
+  @include respond(tablet) {
+    display: none;
+  }
+
+  @include respond(desktop) {
+    display: none;
+  }
+}
+
+position: absolute;
+top: 5%;
+left: 2rem;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+width: 2rem;
+height: 2rem;
+background: transparent;
+border: none;
+cursor: pointer;
+padding: 0;
+z-index: 10;
+
+&:focus {
+  outline: none;
+}

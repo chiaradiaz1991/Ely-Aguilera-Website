@@ -1,0 +1,66 @@
+.main-container-about {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: bottom right;
+  margin-bottom: 60px;
+  padding: 0px 20px;
+
+  @include respond(desktop) {
+    display: flex;
+    flex-direction: row;
+    padding: 80px 50px 40px 50px;
+  }
+
+  .ely-photo {
+    margin: auto;
+    display: flex;
+    height: auto;
+    width: 100%;
+    border-radius: 6px;
+    @include respond(desktop) {
+      width: auto;
+      height: 400px;
+    }
+  }
+
+  .about-me-text {
+    width: 100%;
+
+    @include respond(tablet) {
+      width: 100%;
+    }
+    @include respond(desktop) {
+      width: 50%;
+    }
+    .about-title-section {
+      font-size: 1.5em;
+      align-self: center;
+      text-align: left;
+      color: #ff8a80;
+    }
+
+    .description-about {
+      font-size: 1em;
+      line-height: 23px;
+      width: 300px;
+      text-align: left;
+
+      @include respond(tablet) {
+        width: 100%;
+        padding: 20px 0px;
+      }
+
+      @include respond(desktop) {
+        margin-top: 30px;
+      }
+
+      @include respond(desktop) {
+        width: 100%;
+      }
+    }
+  }
+}
