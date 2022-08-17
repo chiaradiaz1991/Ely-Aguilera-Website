@@ -5,14 +5,13 @@ import image4 from "./assets/gallery/4.png";
 import image5 from "./assets/gallery/5.png";
 import image6 from "./assets/gallery/6.png";
 import image9 from "./assets/gallery/9.png";
-import image10 from "./assets/gallery/10.png";
+import image10 from "./assets/gallery/10.jpeg";
 import image12 from "./assets/gallery/12.png";
 import image14 from "./assets/gallery/14.png";
 import image16 from "./assets/gallery/16.png";
 import image17 from "./assets/gallery/17.png";
 import image18 from "./assets/gallery/18.png";
-import image21 from "./assets/gallery/21.png";
-import image23 from "./assets/gallery/23.png";
+import image21 from "./assets/gallery/21.jpeg";
 import image25 from "./assets/gallery/25.png";
 import image26 from "./assets/gallery/26.png";
 import image27 from "./assets/gallery/27.png";
@@ -57,6 +56,7 @@ import image69 from "./assets/gallery/69.jpeg";
 import image70 from "./assets/gallery/70.jpeg";
 import image71 from "./assets/gallery/71.jpeg";
 import image72 from "./assets/gallery/72.jpeg";
+import image73 from "./assets/gallery/73.jpeg";
 
 export const data = [
   {
@@ -69,7 +69,7 @@ export const data = [
   },
   {
     src: image21,
-    category: "Adolescentes",
+    category: "Adultos",
   },
   {
     src: image30,
@@ -105,7 +105,7 @@ export const data = [
   },
   {
     src: image10,
-    category: "Adultos",
+    category: "Niños",
   },
   {
     src: image31,
@@ -123,10 +123,7 @@ export const data = [
     src: image25,
     category: "Adultos",
   },
-  {
-    src: image23,
-    category: "Adultos",
-  },
+
   {
     src: image32,
     category: "Niños",
@@ -295,4 +292,5 @@ export const data = [
     src: image72,
     category: "Adultos",
   },
+  { src: image73, category: "Adultos" },
 ];
