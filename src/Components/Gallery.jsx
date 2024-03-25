@@ -35,6 +35,7 @@ export const Gallery = () => {
           <img className="image-gallery" src={el.src} alt="arte" key={index} />
         ))}
       </div>
+      
     </div>
   );
 };

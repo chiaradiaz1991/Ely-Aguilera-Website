@@ -57,6 +57,30 @@ import image70 from "./assets/gallery/70.jpeg";
 import image71 from "./assets/gallery/71.jpeg";
 import image72 from "./assets/gallery/72.jpeg";
 import image73 from "./assets/gallery/73.jpeg";
+import image74 from "./assets/gallery/74.jpeg";
+import image75 from "./assets/gallery/75.jpeg";
+import image76 from "./assets/gallery/76.jpeg";
+import image77 from "./assets/gallery/77.jpeg";
+import image78 from "./assets/gallery/78.jpeg";
+import image79 from "./assets/gallery/79.jpeg";
+import image80 from "./assets/gallery/80.jpeg";
+import image81 from "./assets/gallery/81.jpeg";
+import image82 from "./assets/gallery/82.jpeg";
+import image83 from "./assets/gallery/83.jpeg";
+import image84 from "./assets/gallery/84.jpeg";
+import image85 from "./assets/gallery/85.jpeg";
+import image86 from "./assets/gallery/86.jpeg";
+import image87 from "./assets/gallery/87.jpeg";
+import image88 from "./assets/gallery/88.jpeg";
+import image89 from "./assets/gallery/89.jpeg";
+import image90 from "./assets/gallery/90.jpeg";
+import image91 from "./assets/gallery/91.jpeg";
+import image92 from "./assets/gallery/92.jpeg";
+import image93 from "./assets/gallery/93.jpeg";
+import image94 from "./assets/gallery/94.jpeg";
+import image95 from "./assets/gallery/95.jpeg";
+import image96 from "./assets/gallery/96.jpeg";
+import image97 from "./assets/gallery/97.jpeg";
 
 export const data = [
   {
@@ -293,4 +317,28 @@ export const data = [
     category: "Adultos",
   },
   { src: image73, category: "Adultos" },
+  { src: image74, category: "Exposición" },
+  { src: image75, category: "Exposición" },
+  { src: image76, category: "Exposición" },
+  { src: image77, category: "Exposición" },
+  { src: image78, category: "Exposición" },
+  { src: image79, category: "Exposición" },
+  { src: image80, category: "Exposición" },
+  { src: image81, category: "Exposición" },
+  { src: image82, category: "Exposición" },
+  { src: image83, category: "Exposición" },
+  { src: image84, category: "Exposición" },
+  { src: image85, category: "Exposición" },
+  { src: image86, category: "Exposición" },
+  { src: image87, category: "Exposición" },
+  { src: image88, category: "Exposición" },
+  { src: image89, category: "Exposición" },
+  { src: image90, category: "Exposición" },
+  { src: image91, category: "Exposición" },
+  { src: image92, category: "Exposición" },
+  { src: image93, category: "Exposición" },
+  { src: image94, category: "Exposición" },
+  { src: image95, category: "Exposición" },
+  { src: image96, category: "Exposición" },
+  { src: image97, category: "Exposición" },
 ];
